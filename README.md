@@ -2,7 +2,7 @@
 
 **Tech stack:**
 - `IOS 11.0`, `Swift 4`
-- Carthage dependency manager:   `Alamofire v4.5.0`,  `ObjectMappe v2.2.8`,  `PromiseKit v4.3.2`,  `Realm  v2.9.1` ...
+- Carthage dependency manager:   `Alamofire v4.5.0`,  `ObjectMappe v2.2.8`,  `PromiseKit v4.3.2`,  `RealmSwift  v2.9.1` ...
 - Static analyzers:   `tailor`,  `swiftlint`
 
 **Instructions:**
