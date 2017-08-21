@@ -1,0 +1,5 @@
+excluded:
+- proveng2/AppDelegate.swift
+- Carthage
+- Frameworks
+- proveng2Tests
