@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fxg-eP-84K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="b6R-K0-4Ig">
+            <objects>
+                <viewController id="Fxg-eP-84K" customClass="LoginViewController" customModule="proveng2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1NU-MB-Sn2"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpM-Tr-NuI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q6D-P6-BCP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="sign_in_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60T-Qv-fVm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="By signing in, you agree to Proveng Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-Rc-PH4">
+                                <rect key="frame" x="0.0" y="562" width="375" height="96"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Wx4-zC-PFE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-19-SKE" customClass="BaseButton" customModule="proveng2" customModuleProvider="target">
+                                <rect key="frame" x="48" y="460" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.56000000240000003" green="0.56000000240000003" blue="0.56000000240000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="PROVENG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHI-sl-reT">
+                                <rect key="frame" x="61" y="100" width="253" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cGS-if-39b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="sign_in" translatesAutoresizingMaskIntoConstraints="NO" id="kYr-VB-dlx">
+                                <rect key="frame" x="69" y="179" width="236" height="236"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="kYr-VB-dlx" secondAttribute="centerX" id="2ds-ie-2E7"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="trailing" secondItem="8bR-SU-Eyb" secondAttribute="trailing" id="5wL-e5-QlH"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="yGM-Rc-PH4" secondAttribute="centerX" id="AoZ-HV-uI2"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="leading" secondItem="8bR-SU-Eyb" secondAttribute="leading" id="FPd-DC-67C"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="hNi-19-SKE" secondAttribute="centerX" id="Psc-ab-SmQ"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="60T-Qv-fVm" secondAttribute="centerX" id="RdQ-o1-ROO"/>
+                            <constraint firstItem="8bR-SU-Eyb" firstAttribute="bottom" secondItem="yGM-Rc-PH4" secondAttribute="bottom" constant="9" id="TJU-G9-NnV"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="leading" secondItem="8bR-SU-Eyb" secondAttribute="leading" constant="61" id="aTf-o0-WRZ"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="top" secondItem="8bR-SU-Eyb" secondAttribute="top" constant="80" id="bA7-fl-bmy"/>
+                            <constraint firstItem="hNi-19-SKE" firstAttribute="top" secondItem="8bR-SU-Eyb" secondAttribute="top" constant="440" id="edR-vU-gt1"/>
+                            <constraint firstItem="hNi-19-SKE" firstAttribute="top" secondItem="kYr-VB-dlx" secondAttribute="bottom" constant="45" id="fFn-dK-21u"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="q6D-P6-BCP" secondAttribute="centerX" id="k90-Vw-4sM"/>
+                            <constraint firstItem="hNi-19-SKE" firstAttribute="leading" secondItem="8bR-SU-Eyb" secondAttribute="leading" constant="48" id="kaS-PL-0ZT"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="top" secondItem="q6D-P6-BCP" secondAttribute="top" id="mAF-CM-Jh6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bR-SU-Eyb"/>
+                    </view>
+                    <connections>
+                        <outlet property="rulesLabel" destination="yGM-Rc-PH4" id="s5P-Ys-VdZ"/>
+                        <outlet property="signInButton" destination="hNi-19-SKE" id="uIG-9S-LPL"/>
+                        <outlet property="titleLabel" destination="DHI-sl-reT" id="Ow6-Kf-zab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nka-mh-o3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2964" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sign_in" width="236" height="236"/>
+        <image name="sign_in_bg" width="375" height="667"/>
+    </resources>
+</document>
