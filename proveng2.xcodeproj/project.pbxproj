@@ -25,6 +25,7 @@
 		75F35B501F4739580049C455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F35B4F1F4739580049C455 /* Assets.xcassets */; };
 		75F35B531F4739580049C455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F35B511F4739580049C455 /* LaunchScreen.storyboard */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
+		E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		75F35B591F4739580049C455 /* proveng2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proveng2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F35B5D1F4739580049C455 /* proveng2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proveng2Tests.swift; sourceTree = "<group>"; };
 		75F35B5F1F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9A532A21F4CA29100FC1746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +120,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		75C4385B1F49FEC7003B0576 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		75C4385C1F49FED1003B0576 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,9 +158,10 @@
 		75F35B471F4739580049C455 /* proveng2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9A532A21F4CA29100FC1746 /* Assets.xcassets */,
+				E9A5329F1F4C959F00FC1746 /* Controllers */,
 				75C4385D1F49FEE1003B0576 /* Models */,
 				75C4385C1F49FED1003B0576 /* Views */,
-				75C4385B1F49FEC7003B0576 /* Controllers */,
 				75C438591F49FEB2003B0576 /* Cells */,
 				75F35B481F4739580049C455 /* AppDelegate.swift */,
 				75F35B4A1F4739580049C455 /* ViewController.swift */,
@@ -183,6 +180,14 @@
 				75F35B5F1F4739580049C455 /* Info.plist */,
 			);
 			path = proveng2Tests;
+			sourceTree = "<group>";
+		};
+		E9A5329F1F4C959F00FC1746 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */,
 				75F35B4B1F4739580049C455 /* ViewController.swift in Sources */,
 				75F35B491F4739580049C455 /* AppDelegate.swift in Sources */,
 			);
