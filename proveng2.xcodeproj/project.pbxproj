@@ -24,12 +24,18 @@
 		75F35B4E1F4739580049C455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F35B4C1F4739580049C455 /* Main.storyboard */; };
 		75F35B531F4739580049C455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F35B511F4739580049C455 /* LaunchScreen.storyboard */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
+<<<<<<< HEAD
 		E90E47431F4CCB2B00DD5E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A532A21F4CA29100FC1746 /* Assets.xcassets */; };
 		E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */; };
 		E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6061F4CAC8700415314 /* BaseButton.swift */; };
 		E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */; };
 		E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E60B1F4CAD9E00415314 /* SessionData.swift */; };
 		E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */; };
+=======
+		75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C51F4C5EC700657CB4 /* User.swift */; };
+		75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C71F4C721600657CB4 /* RealmMigration.swift */; };
+		75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */; };
+>>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +83,18 @@
 		75F35B591F4739580049C455 /* proveng2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proveng2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F35B5D1F4739580049C455 /* proveng2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proveng2Tests.swift; sourceTree = "<group>"; };
 		75F35B5F1F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9A532A21F4CA29100FC1746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B4E6061F4CAC8700415314 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsForElements.swift; sourceTree = "<group>"; };
 		E9B4E60B1F4CAD9E00415314 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+=======
+		75FAF4C51F4C5EC700657CB4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		75FAF4C71F4C721600657CB4 /* RealmMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMigration.swift; sourceTree = "<group>"; };
+		75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTransform.swift; sourceTree = "<group>"; };
+>>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 		75C4385D1F49FEE1003B0576 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				75FAF4C51F4C5EC700657CB4 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +178,17 @@
 				E9A5329F1F4C959F00FC1746 /* Controllers */,
 				75C4385D1F49FEE1003B0576 /* Models */,
 				75C438591F49FEB2003B0576 /* Cells */,
+<<<<<<< HEAD
+=======
+				75F35B481F4739580049C455 /* AppDelegate.swift */,
+				75F35B4A1F4739580049C455 /* ViewController.swift */,
+				75F35B4C1F4739580049C455 /* Main.storyboard */,
+				75F35B4F1F4739580049C455 /* Assets.xcassets */,
+				75F35B511F4739580049C455 /* LaunchScreen.storyboard */,
+				75F35B541F4739580049C455 /* Info.plist */,
+				75FAF4C71F4C721600657CB4 /* RealmMigration.swift */,
+				75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */,
+>>>>>>> master
 			);
 			path = proveng2;
 			sourceTree = "<group>";
@@ -358,6 +382,9 @@
 				E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */,
 				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75F35B491F4739580049C455 /* AppDelegate.swift in Sources */,
+				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
+				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
+				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +547,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,6 +565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
