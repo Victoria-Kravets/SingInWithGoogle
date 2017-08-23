@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import RealmSwift
 
-class ListTransform<T: RealmSwift.Object>: TransformType where T:Mappable {
+class ListTransform<T: RealmSwift.Object>: TransformType where T: StaticMappable {
     typealias Object = List<T>
     typealias JSON = [[String: Any]]
     let mapper = Mapper<T>()
@@ -28,8 +28,8 @@ class ListTransform<T: RealmSwift.Object>: TransformType where T:Mappable {
     func transformToJSON(_ value: Object?) -> JSON? {
         var results = [[String: Any]]()
         if let value = value {
-            for obj in value {
-                let json = mapper.toJSON(obj)
+            for object in value {
+                let json = mapper.toJSON(object)
                 results.append(json)
             }
         }

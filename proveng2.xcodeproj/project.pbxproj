@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753330B01F4D94D4001A6C67 /* MapperPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753330AF1F4D94D4001A6C67 /* MapperPromise.swift */; };
+		753330B21F4D99DE001A6C67 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753330B11F4D99DE001A6C67 /* ApiError.swift */; };
 		7577E2581F47780100F8257B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; };
 		7577E25A1F47780400F8257B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7577E25D1F47877900F8257B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E25C1F47877900F8257B /* ObjectMapper.framework */; };
@@ -59,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		753330AF1F4D94D4001A6C67 /* MapperPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperPromise.swift; sourceTree = "<group>"; };
+		753330B11F4D99DE001A6C67 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		7577E2571F47780100F8257B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7577E25C1F47877900F8257B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7577E2601F478D9400F8257B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				75F35B541F4739580049C455 /* Info.plist */,
 				75FAF4C71F4C721600657CB4 /* RealmMigration.swift */,
 				75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */,
+				753330AF1F4D94D4001A6C67 /* MapperPromise.swift */,
+				753330B11F4D99DE001A6C67 /* ApiError.swift */,
 			);
 			path = proveng2;
 			sourceTree = "<group>";
@@ -329,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753330B21F4D99DE001A6C67 /* ApiError.swift in Sources */,
 				75F35B4B1F4739580049C455 /* ViewController.swift in Sources */,
 				75F35B491F4739580049C455 /* AppDelegate.swift in Sources */,
+				753330B01F4D94D4001A6C67 /* MapperPromise.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
