@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  proveng2
 //
-//  Created by pavel on 8/22/17.
+//  Created by Pavel Nikitinsky on 8/22/17.
 //  Copyright © 2017 Provectus. All rights reserved.
 //
 
