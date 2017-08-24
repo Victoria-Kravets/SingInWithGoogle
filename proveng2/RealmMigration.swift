@@ -12,7 +12,7 @@ import  RealmSwift
 class RealmMigration {
     let config = Realm.Configuration(
         schemaVersion: 3,
-        migrationBlock: { migration, oldSchemaVersion in
+        migrationBlock: { migration, oldSchemaVersion in // swiftlint:disable:this unused_closure_parameter
             if oldSchemaVersion < 3 {
                 // Realm will automatically detect new properties and removed properties
                 // And will update the schema on disk automatically

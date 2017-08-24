@@ -3,3 +3,5 @@ excluded:
 - Carthage
 - Frameworks
 - proveng2Tests
+disabled_rules:
+- identifier_name

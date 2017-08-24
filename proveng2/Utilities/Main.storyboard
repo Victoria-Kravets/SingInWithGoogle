@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fxg-eP-84K">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="b6R-K0-4Ig">
+            <objects>
+                <viewController id="Fxg-eP-84K" customClass="LoginViewController" customModule="proveng2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1NU-MB-Sn2"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpM-Tr-NuI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q6D-P6-BCP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="sign_in_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60T-Qv-fVm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="By signing in, you agree to Proveng Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-Rc-PH4">
+                                <rect key="frame" x="16" y="533" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-19-SKE" customClass="BaseButton" customModule="proveng2" customModuleProvider="target">
+                                <rect key="frame" x="17" y="471" width="287" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56000000240000003" green="0.56000000240000003" blue="0.56000000240000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="PROVENG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHI-sl-reT">
+                                <rect key="frame" x="16" y="88" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="sign_in" translatesAutoresizingMaskIntoConstraints="NO" id="kYr-VB-dlx">
+                                <rect key="frame" x="75" y="209" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kYr-VB-dlx" secondAttribute="height" id="ENS-UI-iH5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kYr-VB-dlx" firstAttribute="height" secondItem="q6D-P6-BCP" secondAttribute="height" multiplier="0.3" id="3h2-9T-eqG"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="trailing" secondItem="8bR-SU-Eyb" secondAttribute="trailing" id="5wL-e5-QlH"/>
+                            <constraint firstItem="kYr-VB-dlx" firstAttribute="centerY" secondItem="8bR-SU-Eyb" secondAttribute="centerY" id="DgS-xv-4p5"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="width" secondItem="q6D-P6-BCP" secondAttribute="width" id="ElQ-LY-Uju"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="leading" secondItem="8bR-SU-Eyb" secondAttribute="leading" id="FPd-DC-67C"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="height" secondItem="q6D-P6-BCP" secondAttribute="height" id="htn-LD-ecf"/>
+                            <constraint firstItem="60T-Qv-fVm" firstAttribute="top" secondItem="q6D-P6-BCP" secondAttribute="top" id="mAF-CM-Jh6"/>
+                            <constraint firstItem="kYr-VB-dlx" firstAttribute="centerX" secondItem="8bR-SU-Eyb" secondAttribute="centerX" id="oIN-l7-qxu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bR-SU-Eyb"/>
+                    </view>
+                    <connections>
+                        <outlet property="rulesLabel" destination="yGM-Rc-PH4" id="s5P-Ys-VdZ"/>
+                        <outlet property="signInButton" destination="hNi-19-SKE" id="uIG-9S-LPL"/>
+                        <outlet property="titleLabel" destination="DHI-sl-reT" id="Ow6-Kf-zab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nka-mh-o3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962.3188405797105" y="267.39130434782612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sign_in" width="236" height="236"/>
+        <image name="sign_in_bg" width="375" height="667"/>
+    </resources>
+</document>
