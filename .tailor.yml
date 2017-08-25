@@ -5,3 +5,4 @@ exclude:
 - proveng2Tests
 except:
 - function-whitespace
+- trailing-whitespace

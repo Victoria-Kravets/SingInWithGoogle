@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var loginButton: BaseButton!
     @IBOutlet weak var rulesLabelTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var rulesLabel: UILabel!
@@ -18,6 +19,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
 
 }

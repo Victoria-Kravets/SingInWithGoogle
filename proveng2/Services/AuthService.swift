@@ -37,7 +37,7 @@ class AuthService: NSObject {
         
     }
     
-    @discardableResult func signInSilentlyWithPromise() -> Promise<Session>{
+    @discardableResult func signInSilentlyWithPromise() -> Promise<Session> {
         return Promise { fulfill, reject in
             GIDService?.signInSilently()
             guard authError == nil else {

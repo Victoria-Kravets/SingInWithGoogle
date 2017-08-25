@@ -5,3 +5,6 @@ excluded:
 - proveng2Tests
 disabled_rules:
 - identifier_name
+- trailing_whitespace
+
+force_cast: warning
