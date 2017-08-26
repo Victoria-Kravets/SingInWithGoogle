@@ -13,7 +13,6 @@ import PromiseKit
 class AuthService: NSObject {
 
     fileprivate let GIDService = GIDSignIn.sharedInstance()
-    fileprivate var authSession: Session?
     fileprivate var authError: AuthError?
     
     var hasToken: Bool {
@@ -22,29 +21,29 @@ class AuthService: NSObject {
     
     override init() {
         super.init()
-        GIDService?.delegate = self
+        GIDService!.delegate = self
     }
     
-    @discardableResult func signInExplicitlyWithPromise() -> Promise<Session> {
+    @discardableResult func signInExplicitlyWithPromise() -> Promise<AuthResult> {
         return Promise { fulfill, reject in
             GIDService?.signIn()
             guard authError == nil else {
                 reject(authError!)
                 return
             }
-            fulfill(authSession!)
+            fulfill(.success)
         }
         
     }
     
-    @discardableResult func signInSilentlyWithPromise() -> Promise<Session> {
+    @discardableResult func signInSilentlyWithPromise() -> Promise<AuthResult> {
         return Promise { fulfill, reject in
             GIDService?.signInSilently()
             guard authError == nil else {
                 reject(authError!)
                 return
             }
-            fulfill(authSession!)
+            fulfill(.success)
         }
     }
     
@@ -62,6 +61,9 @@ class AuthService: NSObject {
 
 extension AuthService: GIDSignInDelegate {
 
+    // If delegate methods run into errors,
+    // it's gonna be stored as a AuthService property
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         guard user != nil else {
             authError = .noToken
@@ -73,11 +75,9 @@ extension AuthService: GIDSignInDelegate {
             return
         }
         
-        var session = Session()
-        session.idToken = user.authentication.idToken
-        session.accessToken = user.authentication.accessToken
-        session.userId = user.userID
-        authSession = session
+        SingleSession.shared.idToken = user.authentication.idToken
+        SingleSession.shared.accessToken = user.authentication.accessToken
+        SingleSession.shared.userId = user.userID
 
     }
     
@@ -96,6 +96,8 @@ extension AuthService: GIDSignInDelegate {
             authError = .unknownError
             return
         }
+        
+        SingleSession.shared.clearSession()
     }
 
 }

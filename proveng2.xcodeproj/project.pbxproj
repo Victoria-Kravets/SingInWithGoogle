@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353708751F50F35D00A43C65 /* SingleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353708741F50F35D00A43C65 /* SingleSession.swift */; };
+		353708761F50F4CF00A43C65 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B612721F50E7CB000A3B94 /* AuthService.swift */; };
+		353708781F50F4D400A43C65 /* AuthHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B612701F50E7CB000A3B94 /* AuthHelpers.swift */; };
+		3537087A1F5167FF00A43C65 /* DataRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353708791F5167FF00A43C65 /* DataRequestService.swift */; };
+		3537087C1F51BDD700A43C65 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537087B1F51BDD700A43C65 /* Request.swift */; };
 		35B612781F50E809000A3B94 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612741F50E809000A3B94 /* GoogleSignInDependencies.framework */; };
 		35B612791F50E809000A3B94 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612751F50E809000A3B94 /* GoogleSignIn.framework */; };
 		35B6127A1F50E809000A3B94 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612761F50E809000A3B94 /* GoogleAppUtilities.framework */; };
@@ -73,8 +78,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		35B612701F50E7CB000A3B94 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
-		35B612711F50E7CB000A3B94 /* AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
+		353708741F50F35D00A43C65 /* SingleSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSession.swift; sourceTree = "<group>"; };
+		353708791F5167FF00A43C65 /* DataRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestService.swift; sourceTree = "<group>"; };
+		3537087B1F51BDD700A43C65 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		35B612701F50E7CB000A3B94 /* AuthHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelpers.swift; sourceTree = "<group>"; };
 		35B612721F50E7CB000A3B94 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		35B612741F50E809000A3B94 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		35B612751F50E809000A3B94 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
@@ -143,9 +150,10 @@
 		35B6126F1F50E7CB000A3B94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				35B612701F50E7CB000A3B94 /* AuthError.swift */,
-				35B612711F50E7CB000A3B94 /* AuthResult.swift */,
+				35B612701F50E7CB000A3B94 /* AuthHelpers.swift */,
 				35B612721F50E7CB000A3B94 /* AuthService.swift */,
+				353708791F5167FF00A43C65 /* DataRequestService.swift */,
+				3537087B1F51BDD700A43C65 /* Request.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				75FAF4C51F4C5EC700657CB4 /* User.swift */,
+				353708741F50F35D00A43C65 /* SingleSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -414,10 +423,15 @@
 				E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */,
 				E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */,
 				E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */,
+				353708761F50F4CF00A43C65 /* AuthService.swift in Sources */,
 				E99443721F4E1C3700383E11 /* ViewController.swift in Sources */,
+				353708781F50F4D400A43C65 /* AuthHelpers.swift in Sources */,
+				3537087C1F51BDD700A43C65 /* Request.swift in Sources */,
 				E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */,
+				3537087A1F5167FF00A43C65 /* DataRequestService.swift in Sources */,
 				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
+				353708751F50F35D00A43C65 /* SingleSession.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
 				E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
