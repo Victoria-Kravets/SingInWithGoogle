@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EC0CFE61F52BA8600E91F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
-		5EC0CFE71F52BA8600E91F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE51F52BA8600E91F97 /* Info.plist */; };
 		5EC0CFEF1F52C37400E91F97 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
 		5EC0CFF01F52C37800E91F97 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
 		5EC0CFF11F52C37800E91F97 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EC0CFF51F52C60300E91F97 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
+		5EC0CFF61F52C60300E91F97 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
+		5EC0CFF71F52C60300E91F97 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
+		5EC0CFFC1F52C82D00E91F97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
@@ -73,7 +75,10 @@
 		5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EC0CFE51F52BA8600E91F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
-		5EC0CFEE1F52C0B600E91F97 /* provectus2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "provectus2-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = GoogleSignIn/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = GoogleSignIn/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7577E2571F47780100F8257B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7577E25C1F47877900F8257B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7577E2601F478D9400F8257B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
@@ -105,10 +110,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC0CFFC1F52C82D00E91F97 /* SystemConfiguration.framework in Frameworks */,
 				5EC0CFF01F52C37800E91F97 /* GoogleSignIn.framework in Frameworks */,
 				E99443781F4E1E0900383E11 /* PromiseKit.framework in Frameworks */,
 				E99443761F4E1E0900383E11 /* RealmSwift.framework in Frameworks */,
 				E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */,
+				5EC0CFF51F52C60300E91F97 /* GoogleAppUtilities.framework in Frameworks */,
+				5EC0CFF61F52C60300E91F97 /* GoogleSignInDependencies.framework in Frameworks */,
+				5EC0CFF71F52C60300E91F97 /* GoogleSymbolUtilities.framework in Frameworks */,
 				5EC0CFEF1F52C37400E91F97 /* GoogleSignIn.framework in Frameworks */,
 				E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */,
 				E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */,
@@ -128,6 +137,10 @@
 		7577E2561F47780000F8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */,
+				5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */,
+				5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */,
+				5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */,
 				5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */,
 				7577E2641F478D9900F8257B /* Realm.framework */,
 				7577E2621F478D9800F8257B /* RealmSwift.framework */,
@@ -234,7 +247,6 @@
 				E9A532A21F4CA29100FC1746 /* Assets.xcassets */,
 				E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */,
 				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
-				5EC0CFEE1F52C0B600E91F97 /* provectus2-Bridging-Header.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -337,8 +349,6 @@
 				75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */,
 				75C438551F49E6D2003B0576 /* .tailor.yml in Resources */,
 				E99443701F4E1C3700383E11 /* LaunchScreen.storyboard in Resources */,
-				5EC0CFE61F52BA8600E91F97 /* GoogleService-Info.plist in Resources */,
-				5EC0CFE71F52BA8600E91F97 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if hash tailor 2>/dev/null; then\ntailor\nelse\necho \"warning: Please install Tailor from https://tailor.sh\"\nfi";
+			shellScript = "#if hash tailor 2>/dev/null; then\n#tailor\n#else\n#echo \"warning: Please install Tailor from https://tailor.sh\"\n#fi";
 		};
 		75C438561F49F607003B0576 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
