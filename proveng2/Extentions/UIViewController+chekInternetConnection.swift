@@ -9,8 +9,11 @@
 import UIKit
 extension UIViewController {
     func chekInternetConnection() -> Bool {
+        guard let operation = RouterOperationAlert.showError(title: Constants.ErrorAlertTitle, message: Constants.LostInternetConectionAlertMessage, handler: nil)
+            as? RouteOperation else {
+                fatalError("Can not conver RouterOperationAlert to RouteOperation")
+        }
         guard Reachability.isConnectedToNetwork() else {
-            let operation = RouterOperationAlert.showError(title: Constants.ErrorAlertTitle, message: Constants.LostInternetConectionAlertMessage, handler: nil)
             self.router.performOperation(operation)
             return false
         }

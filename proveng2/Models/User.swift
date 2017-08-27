@@ -17,6 +17,7 @@ class User: BaseModel {
     @objc dynamic var imageURL: String?
     @objc dynamic var email: String?
     @objc dynamic var userID: Int = 0
+    var role = List<Role>()
     override static func objectForMapping(map: Map) -> BaseMappable? {
         return User()
     }
@@ -32,4 +33,17 @@ class User: BaseModel {
     override class func primaryKey() -> String? {
         return "userID"
     }
+}
+extension User {
+    func userIsTeacher() -> Bool {
+        let teacherRole = self.role.filter{ $0.name == "Teacher" }
+        let adminRole = self.role.filter{ $0.name == "Administrator" }
+        return (teacherRole.count > 0 || adminRole.count > 0) ? true : false
+    }
+}
+
+enum UserRoleType: String {
+    case guest = "Guest"
+    case student = "Student"
+    case teacher = "Teacher"
 }

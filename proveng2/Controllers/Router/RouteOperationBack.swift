@@ -11,9 +11,6 @@ import Foundation
 enum RouterOperationBack {
 
     case backToLogin
-    case backToTestPreview(testID: Int)
-    case close
-    case backToHome
 
     func baseViewController(_ router:Router) -> BaseViewControllerProtocol? {
         switch self {
@@ -21,7 +18,9 @@ enum RouterOperationBack {
             if let loginVC = router.viewControllerWithType(LoginViewController.self) as? BaseViewControllerProtocol {
                 return loginVC
             } else {
-                let operation = RouterOperationXib.openLogin
+                guard let operation = RouterOperationXib.openLogin as? RouteOperation else {
+                    fatalError("Can not conver RouterOperationXib to RouteOperation")
+                }
                 router.performOperation(operation)
                 if let loginVC = (router.navigationController?.viewControllers.last) as? LoginViewController {
                     return loginVC

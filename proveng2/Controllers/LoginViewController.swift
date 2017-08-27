@@ -54,7 +54,12 @@ class LoginViewController: BaseViewController, GIDSignInUIDelegate {
                 self?.hideLoadingView()
                 completion()
             }.catch { [weak self] error in
-                let operation = RouterOperationAlert.showError(title: error.apiError.domain, message: error.apiError.errorDescription, handler: nil)
+                guard let operation = RouterOperationAlert.showError(
+                    title: error.apiError.domain,
+                    message: error.apiError.errorDescription,
+                    handler: nil) as? RouteOperation else {
+                        fatalError("Can not convert RouterOperationAlert to RouteOperation")
+                }
                 _ = self?.router.performOperation(operation)
         }
     }

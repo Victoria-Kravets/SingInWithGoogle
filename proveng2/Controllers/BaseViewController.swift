@@ -42,5 +42,20 @@ UINavigationBarDelegate, BaseLoadViewProtocol {
         loadView?.removeFromSuperview()
         loadView?.stopIndicator()
     }
+
+    func checkUserType(type: Bool, user: User) {
+        SessionData.teacher = type
+        let role = user.role.filter("name == %@",
+                                    UserRoleType.student.rawValue)
+        if type {
+            self.presentHomeScreenVC(teacher: type)
+        } else if role.count > 0 {
+            self.presentHomeScreenVC(teacher: false)
+        } else {
+            self.requestTests()
+        }
+        self.appDelegate.setupBaseAppearance()
+        self.navigationController?.navigationBar.barTintColor = ColorForElements.main.color//Important
+    }
     
 }
