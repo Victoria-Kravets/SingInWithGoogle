@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5EC0CFE61F52BA8600E91F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
 		5EC0CFE71F52BA8600E91F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE51F52BA8600E91F97 /* Info.plist */; };
+		5EC0CFEF1F52C37400E91F97 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
+		5EC0CFF01F52C37800E91F97 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
+		5EC0CFF11F52C37800E91F97 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
@@ -55,6 +58,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E99443791F4E1E0900383E11 /* PromiseKit.framework in Embed Frameworks */,
+				5EC0CFF11F52C37800E91F97 /* GoogleSignIn.framework in Embed Frameworks */,
 				E99443771F4E1E0900383E11 /* RealmSwift.framework in Embed Frameworks */,
 				E994437B1F4E1E0900383E11 /* ObjectMapper.framework in Embed Frameworks */,
 				E994437D1F4E1E0900383E11 /* Alamofire.framework in Embed Frameworks */,
@@ -68,6 +72,8 @@
 /* Begin PBXFileReference section */
 		5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EC0CFE51F52BA8600E91F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
+		5EC0CFEE1F52C0B600E91F97 /* provectus2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "provectus2-Bridging-Header.h"; sourceTree = "<group>"; };
 		7577E2571F47780100F8257B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7577E25C1F47877900F8257B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7577E2601F478D9400F8257B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
@@ -99,9 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC0CFF01F52C37800E91F97 /* GoogleSignIn.framework in Frameworks */,
 				E99443781F4E1E0900383E11 /* PromiseKit.framework in Frameworks */,
 				E99443761F4E1E0900383E11 /* RealmSwift.framework in Frameworks */,
 				E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */,
+				5EC0CFEF1F52C37400E91F97 /* GoogleSignIn.framework in Frameworks */,
 				E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */,
 				E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */,
 			);
@@ -120,6 +128,7 @@
 		7577E2561F47780000F8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */,
 				7577E2641F478D9900F8257B /* Realm.framework */,
 				7577E2621F478D9800F8257B /* RealmSwift.framework */,
 				7577E2601F478D9400F8257B /* PromiseKit.framework */,
@@ -225,6 +234,7 @@
 				E9A532A21F4CA29100FC1746 /* Assets.xcassets */,
 				E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */,
 				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
+				5EC0CFEE1F52C0B600E91F97 /* provectus2-Bridging-Header.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -545,6 +555,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/GoogleSignIn",
 				);
 				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -567,6 +578,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/GoogleSignIn",
 				);
 				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
