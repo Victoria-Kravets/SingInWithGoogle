@@ -12,7 +12,7 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var kClientID = "1037523928422-9lvqhirscssiif3erd56p0psdgv1pkjo.apps.googleusercontent.com"
+    var kClientID = "776507693705-90qge74elar80ao64plhe0abco5nj3cr.apps.googleusercontent.com"
     var window: UIWindow?
 
     func application(_ application: UIApplication,

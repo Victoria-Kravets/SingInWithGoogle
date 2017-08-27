@@ -11,21 +11,6 @@
 		5E5CD3591F52FBEF00495214 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; };
 		5E5CD35A1F52FBEF00495214 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; };
 		5E5CD35B1F52FBEF00495214 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; };
-		5E5CD35D1F52FBF000495214 /* GoogleCarthageSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; };
-		5E5CD3601F52FBFA00495214 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
-		5E5CD3611F52FBFA00495214 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
-		5E5CD3621F52FC0A00495214 /* GoogleCarthageSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; };
-		5E5CD3631F52FC0A00495214 /* GoogleCarthageSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD3641F52FC0A00495214 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; };
-		5E5CD3651F52FC0A00495214 /* SafariServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD3661F52FC0A00495214 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
-		5E5CD3671F52FC0A00495214 /* SystemConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD3681F52FC0A00495214 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
-		5E5CD3691F52FC0A00495214 /* GoogleAppUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD36B1F52FC0A00495214 /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD36D1F52FC0A00495214 /* GoogleSymbolUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E5CD36E1F52FC0A00495214 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
-		5E5CD36F1F52FC0A00495214 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E5CD3711F52FC0A00495214 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E5CD3731F52FC0A00495214 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E5CD3751F52FC0A00495214 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -33,6 +18,13 @@
 		5E5CD3781F52FC0A00495214 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; };
 		5E5CD3791F52FC0A00495214 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E5CD37E1F5301C600495214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
+		5E84CCB41F53090A004E0AE6 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
+		5E84CCB51F53090A004E0AE6 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
+		5E84CCB61F53090A004E0AE6 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
+		5E84CCB71F53090A004E0AE6 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
+		5E84CCB81F530912004E0AE6 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; };
+		5E84CCB91F530931004E0AE6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
+		5E84CCBA1F5309AE004E0AE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
 		5E8696141F52D975005CD648 /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696131F52D975005CD648 /* ServiceAuth.swift */; };
 		5E8696171F52DDA0005CD648 /* ApiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696161F52DDA0005CD648 /* ApiLayer.swift */; };
 		5E8696191F52DDC6005CD648 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696181F52DDC6005CD648 /* ApiError.swift */; };
@@ -81,18 +73,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E5CD36F1F52FC0A00495214 /* GoogleSignIn.framework in Embed Frameworks */,
 				5E5CD3771F52FC0A00495214 /* ObjectMapper.framework in Embed Frameworks */,
-				5E5CD36D1F52FC0A00495214 /* GoogleSymbolUtilities.framework in Embed Frameworks */,
 				5E5CD3731F52FC0A00495214 /* RealmSwift.framework in Embed Frameworks */,
-				5E5CD3651F52FC0A00495214 /* SafariServices.framework in Embed Frameworks */,
-				5E5CD3671F52FC0A00495214 /* SystemConfiguration.framework in Embed Frameworks */,
 				5E5CD3711F52FC0A00495214 /* Realm.framework in Embed Frameworks */,
 				5E5CD3791F52FC0A00495214 /* Alamofire.framework in Embed Frameworks */,
-				5E5CD3691F52FC0A00495214 /* GoogleAppUtilities.framework in Embed Frameworks */,
 				5E5CD3751F52FC0A00495214 /* PromiseKit.framework in Embed Frameworks */,
-				5E5CD36B1F52FC0A00495214 /* GoogleSignInDependencies.framework in Embed Frameworks */,
-				5E5CD3631F52FC0A00495214 /* GoogleCarthageSignIn.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,17 +141,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5CD35D1F52FBF000495214 /* GoogleCarthageSignIn.framework in Frameworks */,
-				5E5CD36E1F52FC0A00495214 /* GoogleSignIn.framework in Frameworks */,
-				5E5CD3641F52FC0A00495214 /* SafariServices.framework in Frameworks */,
+				5E84CCB91F530931004E0AE6 /* SystemConfiguration.framework in Frameworks */,
+				5E84CCB81F530912004E0AE6 /* SafariServices.framework in Frameworks */,
 				5E5CD3781F52FC0A00495214 /* Alamofire.framework in Frameworks */,
-				5E5CD3621F52FC0A00495214 /* GoogleCarthageSignIn.framework in Frameworks */,
-				5E5CD3681F52FC0A00495214 /* GoogleAppUtilities.framework in Frameworks */,
 				5E5CD3581F52FBEF00495214 /* ObjectMapper.framework in Frameworks */,
-				5E5CD3661F52FC0A00495214 /* SystemConfiguration.framework in Frameworks */,
-				5E5CD3601F52FBFA00495214 /* GoogleSignInDependencies.framework in Frameworks */,
-				5E5CD3611F52FBFA00495214 /* GoogleSymbolUtilities.framework in Frameworks */,
 				5E5CD3591F52FBEF00495214 /* PromiseKit.framework in Frameworks */,
+				5E84CCB41F53090A004E0AE6 /* GoogleAppUtilities.framework in Frameworks */,
+				5E84CCB51F53090A004E0AE6 /* GoogleSignIn.framework in Frameworks */,
+				5E84CCB61F53090A004E0AE6 /* GoogleSignInDependencies.framework in Frameworks */,
+				5E84CCB71F53090A004E0AE6 /* GoogleSymbolUtilities.framework in Frameworks */,
 				5E5CD35A1F52FBEF00495214 /* Realm.framework in Frameworks */,
 				5E5CD35B1F52FBEF00495214 /* RealmSwift.framework in Frameworks */,
 			);
@@ -351,7 +334,6 @@
 				75F35B411F4739580049C455 /* Sources */,
 				75F35B421F4739580049C455 /* Frameworks */,
 				75F35B431F4739580049C455 /* Resources */,
-				75C0BCC41F49E21C00704FA1 /* ShellScript */,
 				75C438561F49F607003B0576 /* ShellScript */,
 				5E5CD37A1F52FC0B00495214 /* Embed Frameworks */,
 			);
@@ -431,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E84CCBA1F5309AE004E0AE6 /* GoogleService-Info.plist in Resources */,
 				E99443711F4E1C3700383E11 /* Main.storyboard in Resources */,
 				E90E47431F4CCB2B00DD5E15 /* Assets.xcassets in Resources */,
 				5EC0D0001F52D3DC00E91F97 /* GoogleSignIn.bundle in Resources */,
@@ -451,19 +434,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		75C0BCC41F49E21C00704FA1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#if hash tailor 2>/dev/null; then\n#tailor\n#else\n#echo \"warning: Please install Tailor from https://tailor.sh\"\n#fi";
-		};
 		75C438561F49F607003B0576 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +641,7 @@
 				);
 				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				Other_Linker_Flags = "$(OTHER_LDFLAGS) -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,6 +667,7 @@
 				);
 				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				Other_Linker_Flags = "$(OTHER_LDFLAGS) -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
