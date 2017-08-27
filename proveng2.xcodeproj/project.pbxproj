@@ -25,6 +25,14 @@
 		5E84CCB81F530912004E0AE6 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; };
 		5E84CCB91F530931004E0AE6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
 		5E84CCBA1F5309AE004E0AE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
+		5E84CCBC1F5311BF004E0AE6 /* UIViewController+chekInternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCBB1F5311BF004E0AE6 /* UIViewController+chekInternetConnection.swift */; };
+		5E84CCBE1F5312B7004E0AE6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCBD1F5312B7004E0AE6 /* Reachability.swift */; };
+		5E84CCC11F5313BA004E0AE6 /* RouteOperationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCC01F5313BA004E0AE6 /* RouteOperationAlert.swift */; };
+		5E84CCC31F531688004E0AE6 /* EventTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCC21F531688004E0AE6 /* EventTypes.swift */; };
+		5E84CCC51F5316AF004E0AE6 /* EventPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCC41F5316AF004E0AE6 /* EventPreview.swift */; };
+		5E84CCC81F53170B004E0AE6 /* DateTransformMSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCC71F53170B004E0AE6 /* DateTransformMSec.swift */; };
+		5E84CCCA1F531774004E0AE6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCC91F531774004E0AE6 /* Date.swift */; };
+		5E84CCCC1F531816004E0AE6 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84CCCB1F531816004E0AE6 /* DateFormatter.swift */; };
 		5E8696141F52D975005CD648 /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696131F52D975005CD648 /* ServiceAuth.swift */; };
 		5E8696171F52DDA0005CD648 /* ApiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696161F52DDA0005CD648 /* ApiLayer.swift */; };
 		5E8696191F52DDC6005CD648 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696181F52DDC6005CD648 /* ApiError.swift */; };
@@ -38,6 +46,15 @@
 		5E8696291F52E4E2005CD648 /* ServiceForRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696281F52E4E2005CD648 /* ServiceForRequest.swift */; };
 		5E86962B1F52E524005CD648 /* ServiceForData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86962A1F52E524005CD648 /* ServiceForData.swift */; };
 		5EC0D0001F52D3DC00E91F97 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFFF1F52D3DC00E91F97 /* GoogleSignIn.bundle */; };
+		5EC4F4951F5320DD0085A608 /* BaseLoadViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4941F5320DD0085A608 /* BaseLoadViewProtocol.swift */; };
+		5EC4F4971F5321200085A608 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4961F5321200085A608 /* LoadingView.swift */; };
+		5EC4F4991F5321AF0085A608 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4981F5321AF0085A608 /* BaseViewController.swift */; };
+		5EC4F49B1F5321F30085A608 /* RouteOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F49A1F5321F30085A608 /* RouteOperations.swift */; };
+		5EC4F49D1F53248B0085A608 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F49C1F53248B0085A608 /* Location.swift */; };
+		5EC4F49F1F5324C80085A608 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F49E1F5324C80085A608 /* Department.swift */; };
+		5EC4F4A11F5324F50085A608 /* GroupLevelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4A01F5324F50085A608 /* GroupLevelPreview.swift */; };
+		5EC4F4A31F5326B30085A608 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4A21F5326B30085A608 /* Router.swift */; };
+		5EC4F4A51F532BC10085A608 /* RouteOperationBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4F4A41F532BC10085A608 /* RouteOperationBack.swift */; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
@@ -88,6 +105,14 @@
 		5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCarthageSignIn.framework; path = Carthage/Build/iOS/GoogleCarthageSignIn.framework; sourceTree = "<group>"; };
 		5E5CD37B1F52FE9800495214 /* proveng2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proveng2.entitlements; sourceTree = "<group>"; };
 		5E5CD3811F5301F500495214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E84CCBB1F5311BF004E0AE6 /* UIViewController+chekInternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+chekInternetConnection.swift"; sourceTree = "<group>"; };
+		5E84CCBD1F5312B7004E0AE6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5E84CCC01F5313BA004E0AE6 /* RouteOperationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOperationAlert.swift; sourceTree = "<group>"; };
+		5E84CCC21F531688004E0AE6 /* EventTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypes.swift; sourceTree = "<group>"; };
+		5E84CCC41F5316AF004E0AE6 /* EventPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPreview.swift; sourceTree = "<group>"; };
+		5E84CCC71F53170B004E0AE6 /* DateTransformMSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTransformMSec.swift; sourceTree = "<group>"; };
+		5E84CCC91F531774004E0AE6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5E84CCCB1F531816004E0AE6 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		5E8696111F52D6E7005CD648 /* proveng2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proveng2-Bridging-Header.h"; sourceTree = "<group>"; };
 		5E8696131F52D975005CD648 /* ServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuth.swift; sourceTree = "<group>"; };
 		5E8696161F52DDA0005CD648 /* ApiLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLayer.swift; sourceTree = "<group>"; };
@@ -110,6 +135,15 @@
 		5EC0CFFD1F52D3BB00E91F97 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = GoogleSignIn/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		5EC0CFFF1F52D3DC00E91F97 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = GoogleSignIn/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		5EC0D0011F52D3F500E91F97 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		5EC4F4941F5320DD0085A608 /* BaseLoadViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadViewProtocol.swift; sourceTree = "<group>"; };
+		5EC4F4961F5321200085A608 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5EC4F4981F5321AF0085A608 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5EC4F49A1F5321F30085A608 /* RouteOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOperations.swift; sourceTree = "<group>"; };
+		5EC4F49C1F53248B0085A608 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		5EC4F49E1F5324C80085A608 /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		5EC4F4A01F5324F50085A608 /* GroupLevelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLevelPreview.swift; sourceTree = "<group>"; };
+		5EC4F4A21F5326B30085A608 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5EC4F4A41F532BC10085A608 /* RouteOperationBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOperationBack.swift; sourceTree = "<group>"; };
 		7577E2571F47780100F8257B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7577E25C1F47877900F8257B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7577E2601F478D9400F8257B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
@@ -165,6 +199,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E84CCBF1F5313B1004E0AE6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5E84CCC01F5313BA004E0AE6 /* RouteOperationAlert.swift */,
+				5EC4F49A1F5321F30085A608 /* RouteOperations.swift */,
+				5EC4F4A21F5326B30085A608 /* Router.swift */,
+				5EC4F4A41F532BC10085A608 /* RouteOperationBack.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5E84CCC61F531702004E0AE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5E84CCC71F53170B004E0AE6 /* DateTransformMSec.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5E8696121F52D95E005CD648 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +272,10 @@
 				75FAF4C51F4C5EC700657CB4 /* User.swift */,
 				5E8696221F52E37E005CD648 /* Session.swift */,
 				5E8696241F52E3B9005CD648 /* File.swift */,
+				5E84CCC41F5316AF004E0AE6 /* EventPreview.swift */,
+				5EC4F49C1F53248B0085A608 /* Location.swift */,
+				5EC4F49E1F5324C80085A608 /* Department.swift */,
+				5EC4F4A01F5324F50085A608 /* GroupLevelPreview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +306,7 @@
 		75F35B471F4739580049C455 /* proveng2 */ = {
 			isa = PBXGroup;
 			children = (
+				5E84CCC61F531702004E0AE6 /* Helpers */,
 				5E5CD37B1F52FE9800495214 /* proveng2.entitlements */,
 				5E8696121F52D95E005CD648 /* Services */,
 				E9B4E60D1F4CADFC00415314 /* Extentions */,
@@ -282,8 +340,11 @@
 		E9A5329F1F4C959F00FC1746 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E84CCBF1F5313B1004E0AE6 /* Router */,
 				E994436E1F4E1C3600383E11 /* ViewController.swift */,
 				E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */,
+				5EC4F4941F5320DD0085A608 /* BaseLoadViewProtocol.swift */,
+				5EC4F4981F5321AF0085A608 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -292,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B4E6061F4CAC8700415314 /* BaseButton.swift */,
+				5EC4F4961F5321200085A608 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +372,8 @@
 				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
 				5E86961A1F52DE14005CD648 /* Constants.swift */,
 				5E86961E1F52E0AA005CD648 /* ContextType.swift */,
+				5E84CCBD1F5312B7004E0AE6 /* Reachability.swift */,
+				5E84CCC21F531688004E0AE6 /* EventTypes.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -320,6 +384,9 @@
 				E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */,
 				5E8696201F52E300005CD648 /* Dictionary.swift */,
 				5E8696261F52E427005CD648 /* String.swift */,
+				5E84CCBB1F5311BF004E0AE6 /* UIViewController+chekInternetConnection.swift */,
+				5E84CCC91F531774004E0AE6 /* Date.swift */,
+				5E84CCCB1F531816004E0AE6 /* DateFormatter.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -456,26 +523,43 @@
 			files = (
 				E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */,
 				E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */,
+				5EC4F4991F5321AF0085A608 /* BaseViewController.swift in Sources */,
 				5E8696271F52E427005CD648 /* String.swift in Sources */,
 				5E86961D1F52DECA005CD648 /* ApiMethod.swift in Sources */,
+				5EC4F49B1F5321F30085A608 /* RouteOperations.swift in Sources */,
+				5EC4F4A31F5326B30085A608 /* Router.swift in Sources */,
 				5E86961F1F52E0AA005CD648 /* ContextType.swift in Sources */,
+				5EC4F4971F5321200085A608 /* LoadingView.swift in Sources */,
+				5EC4F4951F5320DD0085A608 /* BaseLoadViewProtocol.swift in Sources */,
+				5E84CCCA1F531774004E0AE6 /* Date.swift in Sources */,
 				E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */,
+				5EC4F49F1F5324C80085A608 /* Department.swift in Sources */,
 				5E8696141F52D975005CD648 /* ServiceAuth.swift in Sources */,
+				5E84CCC51F5316AF004E0AE6 /* EventPreview.swift in Sources */,
 				E99443721F4E1C3700383E11 /* ViewController.swift in Sources */,
+				5EC4F4A51F532BC10085A608 /* RouteOperationBack.swift in Sources */,
+				5EC4F4A11F5324F50085A608 /* GroupLevelPreview.swift in Sources */,
 				E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */,
 				5E8696231F52E37E005CD648 /* Session.swift in Sources */,
 				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
 				5E8696171F52DDA0005CD648 /* ApiLayer.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
+				5E84CCBE1F5312B7004E0AE6 /* Reachability.swift in Sources */,
+				5E84CCC11F5313BA004E0AE6 /* RouteOperationAlert.swift in Sources */,
 				E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */,
 				5E86961B1F52DE14005CD648 /* Constants.swift in Sources */,
 				5E86962B1F52E524005CD648 /* ServiceForData.swift in Sources */,
+				5E84CCC81F53170B004E0AE6 /* DateTransformMSec.swift in Sources */,
 				5E8696211F52E300005CD648 /* Dictionary.swift in Sources */,
+				5EC4F49D1F53248B0085A608 /* Location.swift in Sources */,
+				5E84CCC31F531688004E0AE6 /* EventTypes.swift in Sources */,
+				5E84CCCC1F531816004E0AE6 /* DateFormatter.swift in Sources */,
 				5E8696191F52DDC6005CD648 /* ApiError.swift in Sources */,
 				5E8696291F52E4E2005CD648 /* ServiceForRequest.swift in Sources */,
 				5E8696251F52E3B9005CD648 /* File.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
+				5E84CCBC1F5311BF004E0AE6 /* UIViewController+chekInternetConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,4 +23,13 @@ class ServiceForRequest<T: Object>: ServiceForData<T> where T: StaticMappable {
         }
     }
 
+    @discardableResult func getObjectsPromise(_ operation: ApiMethod) -> Promise<[T]>{
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        return firstly{
+            return self.apiLayer.requestWithDictionaryOfAnyObjectsPromise(operation)
+            }.then { data in
+                return self.writeArrayDataToStoragePromise(data)
+        }
+    }
+
 }

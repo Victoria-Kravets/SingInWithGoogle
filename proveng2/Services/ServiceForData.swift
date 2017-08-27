@@ -46,4 +46,40 @@ class ServiceForData<T: Object> where T:StaticMappable {
                 throw error.apiError
         }
     }
+
+    func deleteAllDataFromStoragePromise() -> Promise<String> {
+        return Promise { fulfill, reject in
+            let realm = try Realm()
+            let objectToDelete = realm.objects(T.self)
+            try realm.write {
+                realm.delete(objectToDelete)
+                fulfill("Success")
+            }
+            }.recover { error -> String in
+                throw error.apiError
+        }
+    }
+
+    func writeArrayDataToStoragePromise(_ data: [AnyObject]) -> Promise<[T]> {
+        return Promise { fulfill, reject in
+            let realm = try Realm()
+            //print(data)
+            try realm.write{
+                guard let realmObjects = Mapper<T>().mapArray(JSONObject: data) else {
+                    return reject(ApiError(errorDescription: "WRITE to STORAGE ERROR"))
+                }
+//                if T.self === Event.self || T.self === FeedEvent.self {
+//                    detectEvents(objects: realmObjects, realm: realm)
+//                }
+//                if T.self === Event.self || T.self === GroupPreview.self || T.self === FeedEvent.self || T.self === MaterialPreview.self || T.self === TestPreview.self {
+                    let objectToDelete = realm.objects(T.self)
+                    realm.delete(objectToDelete)
+//                }
+                realm.add(realmObjects, update: true)
+                fulfill(realmObjects)
+            }
+            }.recover{ error -> [T] in
+                throw error.apiError
+        }
+    }
 }

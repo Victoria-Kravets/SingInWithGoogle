@@ -46,10 +46,7 @@ extension ApiError {
 extension Error {
     var apiError: ApiError {
         if self is ApiError {
-            guard let error = self as? ApiError else {
-                fatalError("Can not convert self as ApiError")
-            }
-            return error
+            return self as! ApiError
         } else {
             let castedError = self as NSError
             return ApiError(domain: castedError.domain, code: castedError.code, userInfo: castedError.userInfo)
