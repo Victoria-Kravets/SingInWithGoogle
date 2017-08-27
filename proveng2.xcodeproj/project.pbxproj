@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E8696021F52D5D7005CD648 /* SafariServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E8696031F52D5D7005CD648 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
-		5E8696041F52D5D7005CD648 /* SystemConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E8696051F52D652005CD648 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
-		5E8696061F52D658005CD648 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
-		5E8696071F52D658005CD648 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E8696081F52D661005CD648 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
-		5E8696091F52D661005CD648 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
-		5E86960A1F52D661005CD648 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
-		5E86960B1F52D667005CD648 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
-		5E86960C1F52D667005CD648 /* GoogleAppUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E86960D1F52D667005CD648 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
-		5E86960E1F52D667005CD648 /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E86960F1F52D667005CD648 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
-		5E8696101F52D667005CD648 /* GoogleSymbolUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3581F52FBEF00495214 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E25C1F47877900F8257B /* ObjectMapper.framework */; };
+		5E5CD3591F52FBEF00495214 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; };
+		5E5CD35A1F52FBEF00495214 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; };
+		5E5CD35B1F52FBEF00495214 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; };
+		5E5CD35D1F52FBF000495214 /* GoogleCarthageSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; };
+		5E5CD3601F52FBFA00495214 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; };
+		5E5CD3611F52FBFA00495214 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; };
+		5E5CD3621F52FC0A00495214 /* GoogleCarthageSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; };
+		5E5CD3631F52FC0A00495214 /* GoogleCarthageSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3641F52FC0A00495214 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; };
+		5E5CD3651F52FC0A00495214 /* SafariServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3661F52FC0A00495214 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; };
+		5E5CD3671F52FC0A00495214 /* SystemConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3681F52FC0A00495214 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; };
+		5E5CD3691F52FC0A00495214 /* GoogleAppUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD36B1F52FC0A00495214 /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD36D1F52FC0A00495214 /* GoogleSymbolUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFF41F52C60300E91F97 /* GoogleSymbolUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD36E1F52FC0A00495214 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; };
+		5E5CD36F1F52FC0A00495214 /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3711F52FC0A00495214 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3731F52FC0A00495214 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3751F52FC0A00495214 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3771F52FC0A00495214 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E25C1F47877900F8257B /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD3781F52FC0A00495214 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; };
+		5E5CD3791F52FC0A00495214 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5CD37E1F5301C600495214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
+		5E8696141F52D975005CD648 /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696131F52D975005CD648 /* ServiceAuth.swift */; };
+		5E8696171F52DDA0005CD648 /* ApiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696161F52DDA0005CD648 /* ApiLayer.swift */; };
+		5E8696191F52DDC6005CD648 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696181F52DDC6005CD648 /* ApiError.swift */; };
+		5E86961B1F52DE14005CD648 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86961A1F52DE14005CD648 /* Constants.swift */; };
+		5E86961D1F52DECA005CD648 /* ApiMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86961C1F52DECA005CD648 /* ApiMethod.swift */; };
+		5E86961F1F52E0AA005CD648 /* ContextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86961E1F52E0AA005CD648 /* ContextType.swift */; };
+		5E8696211F52E300005CD648 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696201F52E300005CD648 /* Dictionary.swift */; };
+		5E8696231F52E37E005CD648 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696221F52E37E005CD648 /* Session.swift */; };
+		5E8696251F52E3B9005CD648 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696241F52E3B9005CD648 /* File.swift */; };
+		5E8696271F52E427005CD648 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696261F52E427005CD648 /* String.swift */; };
+		5E8696291F52E4E2005CD648 /* ServiceForRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8696281F52E4E2005CD648 /* ServiceForRequest.swift */; };
+		5E86962B1F52E524005CD648 /* ServiceForData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86962A1F52E524005CD648 /* ServiceForData.swift */; };
 		5EC0D0001F52D3DC00E91F97 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFFF1F52D3DC00E91F97 /* GoogleSignIn.bundle */; };
-		5EC0D0021F52D3F500E91F97 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC0D0011F52D3F500E91F97 /* SafariServices.framework */; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
@@ -35,16 +57,6 @@
 		E99443711F4E1C3700383E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E994436C1F4E1C3600383E11 /* Main.storyboard */; };
 		E99443721F4E1C3700383E11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994436E1F4E1C3600383E11 /* ViewController.swift */; };
 		E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994436F1F4E1C3600383E11 /* AppDelegate.swift */; };
-		E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; };
-		E99443751F4E1E0900383E11 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E99443761F4E1E0900383E11 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; };
-		E99443771F4E1E0900383E11 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2621F478D9800F8257B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E99443781F4E1E0900383E11 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; };
-		E99443791F4E1E0900383E11 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2601F478D9400F8257B /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E25C1F47877900F8257B /* ObjectMapper.framework */; };
-		E994437B1F4E1E0900383E11 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E25C1F47877900F8257B /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; };
-		E994437D1F4E1E0900383E11 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2571F47780100F8257B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */; };
 		E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6061F4CAC8700415314 /* BaseButton.swift */; };
 		E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */; };
@@ -63,23 +75,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E994437E1F4E1E0A00383E11 /* Embed Frameworks */ = {
+		5E5CD37A1F52FC0B00495214 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E99443791F4E1E0900383E11 /* PromiseKit.framework in Embed Frameworks */,
-				5E8696041F52D5D7005CD648 /* SystemConfiguration.framework in Embed Frameworks */,
-				E99443771F4E1E0900383E11 /* RealmSwift.framework in Embed Frameworks */,
-				5E8696021F52D5D7005CD648 /* SafariServices.framework in Embed Frameworks */,
-				5E8696101F52D667005CD648 /* GoogleSymbolUtilities.framework in Embed Frameworks */,
-				E994437B1F4E1E0900383E11 /* ObjectMapper.framework in Embed Frameworks */,
-				E994437D1F4E1E0900383E11 /* Alamofire.framework in Embed Frameworks */,
-				5E86960C1F52D667005CD648 /* GoogleAppUtilities.framework in Embed Frameworks */,
-				E99443751F4E1E0900383E11 /* Realm.framework in Embed Frameworks */,
-				5E86960E1F52D667005CD648 /* GoogleSignInDependencies.framework in Embed Frameworks */,
-				5E8696071F52D658005CD648 /* GoogleSignIn.framework in Embed Frameworks */,
+				5E5CD36F1F52FC0A00495214 /* GoogleSignIn.framework in Embed Frameworks */,
+				5E5CD3771F52FC0A00495214 /* ObjectMapper.framework in Embed Frameworks */,
+				5E5CD36D1F52FC0A00495214 /* GoogleSymbolUtilities.framework in Embed Frameworks */,
+				5E5CD3731F52FC0A00495214 /* RealmSwift.framework in Embed Frameworks */,
+				5E5CD3651F52FC0A00495214 /* SafariServices.framework in Embed Frameworks */,
+				5E5CD3671F52FC0A00495214 /* SystemConfiguration.framework in Embed Frameworks */,
+				5E5CD3711F52FC0A00495214 /* Realm.framework in Embed Frameworks */,
+				5E5CD3791F52FC0A00495214 /* Alamofire.framework in Embed Frameworks */,
+				5E5CD3691F52FC0A00495214 /* GoogleAppUtilities.framework in Embed Frameworks */,
+				5E5CD3751F52FC0A00495214 /* PromiseKit.framework in Embed Frameworks */,
+				5E5CD36B1F52FC0A00495214 /* GoogleSignInDependencies.framework in Embed Frameworks */,
+				5E5CD3631F52FC0A00495214 /* GoogleCarthageSignIn.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,9 +100,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCarthageSignIn.framework; path = Carthage/Build/iOS/GoogleCarthageSignIn.framework; sourceTree = "<group>"; };
+		5E5CD37B1F52FE9800495214 /* proveng2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proveng2.entitlements; sourceTree = "<group>"; };
+		5E5CD3811F5301F500495214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8696111F52D6E7005CD648 /* proveng2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proveng2-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E8696131F52D975005CD648 /* ServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuth.swift; sourceTree = "<group>"; };
+		5E8696161F52DDA0005CD648 /* ApiLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLayer.swift; sourceTree = "<group>"; };
+		5E8696181F52DDC6005CD648 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		5E86961A1F52DE14005CD648 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E86961C1F52DECA005CD648 /* ApiMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMethod.swift; sourceTree = "<group>"; };
+		5E86961E1F52E0AA005CD648 /* ContextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextType.swift; sourceTree = "<group>"; };
+		5E8696201F52E300005CD648 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		5E8696221F52E37E005CD648 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		5E8696241F52E3B9005CD648 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5E8696261F52E427005CD648 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		5E8696281F52E4E2005CD648 /* ServiceForRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForRequest.swift; sourceTree = "<group>"; };
+		5E86962A1F52E524005CD648 /* ServiceForData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForData.swift; sourceTree = "<group>"; };
 		5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5EC0CFE51F52BA8600E91F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC0CFEA1F52BFB800E91F97 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
 		5EC0CFF21F52C60300E91F97 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = GoogleSignIn/GoogleAppUtilities.framework; sourceTree = "<group>"; };
 		5EC0CFF31F52C60300E91F97 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
@@ -129,21 +156,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC0D0021F52D3F500E91F97 /* SafariServices.framework in Frameworks */,
-				5E8696031F52D5D7005CD648 /* SystemConfiguration.framework in Frameworks */,
-				E99443781F4E1E0900383E11 /* PromiseKit.framework in Frameworks */,
-				E99443761F4E1E0900383E11 /* RealmSwift.framework in Frameworks */,
-				5E86960B1F52D667005CD648 /* GoogleAppUtilities.framework in Frameworks */,
-				5E8696051F52D652005CD648 /* GoogleSignIn.framework in Frameworks */,
-				5E8696081F52D661005CD648 /* GoogleAppUtilities.framework in Frameworks */,
-				5E8696091F52D661005CD648 /* GoogleSignInDependencies.framework in Frameworks */,
-				5E86960D1F52D667005CD648 /* GoogleSignInDependencies.framework in Frameworks */,
-				5E86960A1F52D661005CD648 /* GoogleSymbolUtilities.framework in Frameworks */,
-				E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */,
-				E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */,
-				5E86960F1F52D667005CD648 /* GoogleSymbolUtilities.framework in Frameworks */,
-				5E8696061F52D658005CD648 /* GoogleSignIn.framework in Frameworks */,
-				E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */,
+				5E5CD35D1F52FBF000495214 /* GoogleCarthageSignIn.framework in Frameworks */,
+				5E5CD36E1F52FC0A00495214 /* GoogleSignIn.framework in Frameworks */,
+				5E5CD3641F52FC0A00495214 /* SafariServices.framework in Frameworks */,
+				5E5CD3781F52FC0A00495214 /* Alamofire.framework in Frameworks */,
+				5E5CD3621F52FC0A00495214 /* GoogleCarthageSignIn.framework in Frameworks */,
+				5E5CD3681F52FC0A00495214 /* GoogleAppUtilities.framework in Frameworks */,
+				5E5CD3581F52FBEF00495214 /* ObjectMapper.framework in Frameworks */,
+				5E5CD3661F52FC0A00495214 /* SystemConfiguration.framework in Frameworks */,
+				5E5CD3601F52FBFA00495214 /* GoogleSignInDependencies.framework in Frameworks */,
+				5E5CD3611F52FBFA00495214 /* GoogleSymbolUtilities.framework in Frameworks */,
+				5E5CD3591F52FBEF00495214 /* PromiseKit.framework in Frameworks */,
+				5E5CD35A1F52FBEF00495214 /* Realm.framework in Frameworks */,
+				5E5CD35B1F52FBEF00495214 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,9 +182,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E8696121F52D95E005CD648 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E8696151F52DD81005CD648 /* Api Layer */,
+				5E8696131F52D975005CD648 /* ServiceAuth.swift */,
+				5E8696281F52E4E2005CD648 /* ServiceForRequest.swift */,
+				5E86962A1F52E524005CD648 /* ServiceForData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5E8696151F52DD81005CD648 /* Api Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5E8696161F52DDA0005CD648 /* ApiLayer.swift */,
+				5E8696181F52DDC6005CD648 /* ApiError.swift */,
+				5E86961C1F52DECA005CD648 /* ApiMethod.swift */,
+			);
+			path = "Api Layer";
+			sourceTree = "<group>";
+		};
 		7577E2561F47780000F8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E5CD35C1F52FBF000495214 /* GoogleCarthageSignIn.framework */,
 				5EC0D0011F52D3F500E91F97 /* SafariServices.framework */,
 				5EC0CFFD1F52D3BB00E91F97 /* GoogleSignIn.bundle */,
 				5EC0CFFB1F52C82D00E91F97 /* SystemConfiguration.framework */,
@@ -187,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				75FAF4C51F4C5EC700657CB4 /* User.swift */,
+				5E8696221F52E37E005CD648 /* Session.swift */,
+				5E8696241F52E3B9005CD648 /* File.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +266,8 @@
 		75F35B471F4739580049C455 /* proveng2 */ = {
 			isa = PBXGroup;
 			children = (
+				5E5CD37B1F52FE9800495214 /* proveng2.entitlements */,
+				5E8696121F52D95E005CD648 /* Services */,
 				E9B4E60D1F4CADFC00415314 /* Extentions */,
 				E9B4E6081F4CACCB00415314 /* Utilities */,
 				E9B4E6051F4CAC6900415314 /* Views */,
@@ -265,8 +316,8 @@
 		E9B4E6081F4CACCB00415314 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5E5CD3811F5301F500495214 /* Info.plist */,
 				5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */,
-				5EC0CFE51F52BA8600E91F97 /* Info.plist */,
 				E994436A1F4E1C3600383E11 /* LaunchScreen.storyboard */,
 				E994436C1F4E1C3600383E11 /* Main.storyboard */,
 				E994436F1F4E1C3600383E11 /* AppDelegate.swift */,
@@ -274,6 +325,8 @@
 				E9A532A21F4CA29100FC1746 /* Assets.xcassets */,
 				E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */,
 				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
+				5E86961A1F52DE14005CD648 /* Constants.swift */,
+				5E86961E1F52E0AA005CD648 /* ContextType.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -282,6 +335,8 @@
 			isa = PBXGroup;
 			children = (
 				E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */,
+				5E8696201F52E300005CD648 /* Dictionary.swift */,
+				5E8696261F52E427005CD648 /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -298,7 +353,7 @@
 				75F35B431F4739580049C455 /* Resources */,
 				75C0BCC41F49E21C00704FA1 /* ShellScript */,
 				75C438561F49F607003B0576 /* ShellScript */,
-				E994437E1F4E1E0A00383E11 /* Embed Frameworks */,
+				5E5CD37A1F52FC0B00495214 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +395,11 @@
 					75F35B441F4739580049C455 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					75F35B581F4739580049C455 = {
 						CreatedOnToolsVersion = 9.0;
@@ -384,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5CD37E1F5301C600495214 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,13 +486,25 @@
 			files = (
 				E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */,
 				E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */,
+				5E8696271F52E427005CD648 /* String.swift in Sources */,
+				5E86961D1F52DECA005CD648 /* ApiMethod.swift in Sources */,
+				5E86961F1F52E0AA005CD648 /* ContextType.swift in Sources */,
 				E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */,
+				5E8696141F52D975005CD648 /* ServiceAuth.swift in Sources */,
 				E99443721F4E1C3700383E11 /* ViewController.swift in Sources */,
 				E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */,
+				5E8696231F52E37E005CD648 /* Session.swift in Sources */,
 				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
+				5E8696171F52DDA0005CD648 /* ApiLayer.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
 				E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */,
+				5E86961B1F52DE14005CD648 /* Constants.swift in Sources */,
+				5E86962B1F52E524005CD648 /* ServiceForData.swift in Sources */,
+				5E8696211F52E300005CD648 /* Dictionary.swift in Sources */,
+				5E8696191F52DDC6005CD648 /* ApiError.swift in Sources */,
+				5E8696291F52E4E2005CD648 /* ServiceForRequest.swift in Sources */,
+				5E8696251F52E3B9005CD648 /* File.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: nikitinskiypavel@gmail.com (52X8AF8DZX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -611,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: nikitinskiypavel@gmail.com (52X8AF8DZX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";

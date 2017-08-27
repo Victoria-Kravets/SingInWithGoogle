@@ -10,18 +10,7 @@ import UIKit
 import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!,
-              didSignInFor user: GIDGoogleUser!,
-              withError error: Error!) {
-        var configureError: NSError?
-        GGLContext.sharedInstance().configureWithError(&configureError)
-        assert(configureError == nil, "Error configuring Google services: \(configureError)")
-
-        GIDSignIn.sharedInstance().delegate = self
-
-        return true
-    }
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var kClientID = "1037523928422-9lvqhirscssiif3erd56p0psdgv1pkjo.apps.googleusercontent.com"
     var window: UIWindow?
@@ -32,6 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = kClientID
         // Override point for customization after application launch.
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        guard let desiredOption =
+            options[UIApplicationOpenURLOptionsKey.sourceApplication]
+            as? String else {
+            fatalError("Failed to cast to string")
+        }
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication:
+            desiredOption,
+                                                 annotation:
+            options[UIApplicationOpenURLOptionsKey.annotation])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
