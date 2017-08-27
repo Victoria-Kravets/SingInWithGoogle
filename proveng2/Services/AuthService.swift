@@ -26,7 +26,7 @@ class AuthService: NSObject {
     
     @discardableResult func signInExplicitlyWithPromise() -> Promise<AuthResult> {
         return Promise { fulfill, reject in
-            GIDService?.signIn()
+            GIDService!.signIn()
             guard authError == nil else {
                 reject(authError!)
                 return

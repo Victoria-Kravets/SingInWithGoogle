@@ -74,14 +74,14 @@
                         <viewLayoutGuide key="safeArea" id="8bR-SU-Eyb"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="hNi-19-SKE" id="Mps-x0-QGF"/>
                         <outlet property="rulesLabel" destination="yGM-Rc-PH4" id="s5P-Ys-VdZ"/>
-                        <outlet property="signInButton" destination="hNi-19-SKE" id="uIG-9S-LPL"/>
                         <outlet property="titleLabel" destination="DHI-sl-reT" id="Ow6-Kf-zab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nka-mh-o3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2962.3188405797105" y="267.39130434782612"/>
+            <point key="canvasLocation" x="2960.625" y="267.25352112676057"/>
         </scene>
     </scenes>
     <resources>

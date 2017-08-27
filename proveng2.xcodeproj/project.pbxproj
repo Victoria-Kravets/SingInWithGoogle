@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3514EACF1F531D96003B294A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514EACE1F531D96003B294A /* Extensions.swift */; };
+		3514EAD11F53204B003B294A /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514EAD01F53204B003B294A /* RequestError.swift */; };
 		353708751F50F35D00A43C65 /* SingleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353708741F50F35D00A43C65 /* SingleSession.swift */; };
 		353708761F50F4CF00A43C65 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B612721F50E7CB000A3B94 /* AuthService.swift */; };
 		353708781F50F4D400A43C65 /* AuthHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B612701F50E7CB000A3B94 /* AuthHelpers.swift */; };
@@ -78,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3514EACE1F531D96003B294A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3514EAD01F53204B003B294A /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		353708741F50F35D00A43C65 /* SingleSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSession.swift; sourceTree = "<group>"; };
 		353708791F5167FF00A43C65 /* DataRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestService.swift; sourceTree = "<group>"; };
 		3537087B1F51BDD700A43C65 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			children = (
 				35B612701F50E7CB000A3B94 /* AuthHelpers.swift */,
 				35B612721F50E7CB000A3B94 /* AuthService.swift */,
+				3514EAD01F53204B003B294A /* RequestError.swift */,
 				353708791F5167FF00A43C65 /* DataRequestService.swift */,
 				3537087B1F51BDD700A43C65 /* Request.swift */,
 			);
@@ -216,7 +221,7 @@
 		75F35B471F4739580049C455 /* proveng2 */ = {
 			isa = PBXGroup;
 			children = (
-				E9B4E60D1F4CADFC00415314 /* Extentions */,
+				E9B4E60D1F4CADFC00415314 /* Extensions */,
 				E9B4E6081F4CACCB00415314 /* Utilities */,
 				E9B4E6051F4CAC6900415314 /* Views */,
 				E9A5329F1F4C959F00FC1746 /* Controllers */,
@@ -271,12 +276,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E9B4E60D1F4CADFC00415314 /* Extentions */ = {
+		E9B4E60D1F4CADFC00415314 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */,
+				3514EACE1F531D96003B294A /* Extensions.swift */,
 			);
-			path = Extentions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,8 +438,10 @@
 				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
 				353708751F50F35D00A43C65 /* SingleSession.swift in Sources */,
+				3514EACF1F531D96003B294A /* Extensions.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
 				E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */,
+				3514EAD11F53204B003B294A /* RequestError.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@ import UIKit
 import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate {
+    
     @IBOutlet weak var loginButton: BaseButton!
     @IBOutlet weak var rulesLabelTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var rulesLabel: UILabel!
@@ -26,25 +27,34 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func signIn() {
-        firstly {
-            authService.signInExplicitlyWithPromise()
-            }.then { session in
-                print(session.idToken)
-            }.catch {
-                print($0.localizedDescription)
-        }
+        signInExplicitly()
     }
     
     func signInSilently() {
         if !authService.hasToken {
             firstly {
                 authService.signInSilentlyWithPromise()
-                }.then { session in
-                        print(session.idToken)
+                }.then { _ in
+                    DataRequestService.shared.send(request: .loginUser).then {
+                        print($0)
+                    }
                 }.catch {
                     print($0.localizedDescription)
             }
         }
+    }
+    
+    func signInExplicitly() {
+        firstly {
+            authService.signInExplicitlyWithPromise()
+            }.then { _ in
+                DataRequestService.shared.send(request: .loginUser).then { result in
+                    print(result)
+                }
+            }.catch {
+                print($0.localizedDescription)
+        }
+
     }
 
 }

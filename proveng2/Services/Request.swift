@@ -18,26 +18,26 @@ import Alamofire
  */
 enum Request {
     
-    case loginUser(gToken: String)
-    case logoutUser(gToken: String)
+    case loginUser
+    case logoutUser
     
-    var parameters: [String: AnyObject] {
+    var parameters: [String: Any]? {
         switch self {
-        //MARK: User
         case .loginUser, .logoutUser:
             return [:]
+        }
     }
     
     var path: String {
         switch self {
-        //MARK: User
         case .loginUser:
             return "auth-by-google"
         case .logoutUser:
             return "logout"
+        }
     }
         
-    var headers: [String: String]{
+    var headers: [String: String] {
         let tokenKey = "token"
         switch self {
         case .loginUser:
@@ -48,15 +48,7 @@ enum Request {
     }
     
     var body: String {
-        let tokenKey = "gToken"
         switch self {
-        case .loginUser(let gToken):
-            let jsonBody: JSON =  [tokenKey: gToken]
-            if let stringBody = jsonBody.rawString(){
-                return stringBody
-            } else {
-                return ""
-            }
         default:
             return ""
         }
@@ -66,7 +58,7 @@ enum Request {
         switch self {
         case .loginUser, .logoutUser:
             return .post
+        }
     }
     
 }
-
