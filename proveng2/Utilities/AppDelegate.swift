@@ -10,7 +10,19 @@ import UIKit
 import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!,
+              didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+
+        GIDSignIn.sharedInstance().delegate = self
+
+        return true
+    }
+
     var kClientID = "1037523928422-9lvqhirscssiif3erd56p0psdgv1pkjo.apps.googleusercontent.com"
     var window: UIWindow?
 
