@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC0CFE61F52BA8600E91F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */; };
+		5EC0CFE71F52BA8600E91F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0CFE51F52BA8600E91F97 /* Info.plist */; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EC0CFE51F52BA8600E91F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7577E2571F47780100F8257B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7577E25C1F47877900F8257B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7577E2601F478D9400F8257B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
@@ -72,7 +76,6 @@
 		75C438541F49E6D2003B0576 /* .tailor.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .tailor.yml; sourceTree = "<group>"; };
 		75C438571F49F67C003B0576 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		75F35B451F4739580049C455 /* proveng2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proveng2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75F35B541F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F35B591F4739580049C455 /* proveng2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proveng2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F35B5D1F4739580049C455 /* proveng2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proveng2Tests.swift; sourceTree = "<group>"; };
 		75F35B5F1F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,7 +174,6 @@
 				E9A5329F1F4C959F00FC1746 /* Controllers */,
 				75C4385D1F49FEE1003B0576 /* Models */,
 				75C438591F49FEB2003B0576 /* Cells */,
-				75F35B541F4739580049C455 /* Info.plist */,
 				75FAF4C71F4C721600657CB4 /* RealmMigration.swift */,
 				75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */,
 			);
@@ -214,6 +216,8 @@
 		E9B4E6081F4CACCB00415314 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5EC0CFE41F52BA8500E91F97 /* GoogleService-Info.plist */,
+				5EC0CFE51F52BA8600E91F97 /* Info.plist */,
 				E994436A1F4E1C3600383E11 /* LaunchScreen.storyboard */,
 				E994436C1F4E1C3600383E11 /* Main.storyboard */,
 				E994436F1F4E1C3600383E11 /* AppDelegate.swift */,
@@ -323,6 +327,8 @@
 				75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */,
 				75C438551F49E6D2003B0576 /* .tailor.yml in Resources */,
 				E99443701F4E1C3700383E11 /* LaunchScreen.storyboard in Resources */,
+				5EC0CFE61F52BA8600E91F97 /* GoogleService-Info.plist in Resources */,
+				5EC0CFE71F52BA8600E91F97 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +546,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = proveng2/Info.plist;
+				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,7 +568,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = proveng2/Info.plist;
+				INFOPLIST_FILE = proveng2/Utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

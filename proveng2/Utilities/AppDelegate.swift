@@ -10,11 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var kClientID = "1037523928422-9lvqhirscssiif3erd56p0psdgv1pkjo.apps.googleusercontent.com"
     var window: UIWindow?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Configure Google Auth
+        GIDSignIn.sharedInstance().clientID = kClientID
         // Override point for customization after application launch.
         return true
     }
