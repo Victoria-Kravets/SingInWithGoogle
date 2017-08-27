@@ -10,7 +10,11 @@ import UIKit
 
 extension UIViewController {
     var router: Router {
-        return (UIApplication.shared.delegate as! AppDelegate).router!
+        guard let app = UIApplication.shared.delegate as? AppDelegate,
+            let router = app.router else {
+            fatalError("Can not get router")
+        }
+        return router
     }
 }
 
