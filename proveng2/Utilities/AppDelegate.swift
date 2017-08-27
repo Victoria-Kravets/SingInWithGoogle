@@ -14,11 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var kClientID = "776507693705-90qge74elar80ao64plhe0abco5nj3cr.apps.googleusercontent.com"
     var window: UIWindow?
+    var router : Router?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Configure Google Auth
         GIDSignIn.sharedInstance().clientID = kClientID
+        // Configure NavigationController and Set Router
+        guard let rootNavigationController = self.window?.rootViewController
+            as? UINavigationController else {
+            fatalError("Can not init the rootNavigationController")
+        }
+        router = Router(navigationController:rootNavigationController)
         // Override point for customization after application launch.
         return true
     }
