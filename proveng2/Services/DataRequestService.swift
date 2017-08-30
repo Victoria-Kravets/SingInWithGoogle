@@ -50,6 +50,8 @@ class DataRequestService {
             let method = request.method
             let headers = request.headers
             let body = request.body
+            print("AccessId:")
+            print(body)
             var urlComponents =  URLComponents()
             urlComponents.scheme = self.urlScheme
             urlComponents.host = self.urlHost

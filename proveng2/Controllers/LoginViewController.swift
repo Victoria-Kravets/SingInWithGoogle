@@ -24,7 +24,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDService?.uiDelegate = self
-        //GIDService?.signOut() // for development purposes
+        GIDService?.signOut() // for development purposes
         signInSilently()
     }
     
