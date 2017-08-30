@@ -12,7 +12,7 @@ import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     let kClientID = "776507693705-90qge74elar80ao64plhe0abco5nj3cr.apps.googleusercontent.com"
     
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                     sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
                                                     annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         /* Sent when the application is about to move from active to inactive state.
          This can occur for certain types of temporary interruptions (such as an incoming

@@ -22,9 +22,10 @@ enum Request {
     case logoutUser
     
     var parameters: [String: Any]? {
+        let tokenKey = "token"
         switch self {
         case .loginUser, .logoutUser:
-            return [:]
+            return [tokenKey: SingleSession.shared.idToken ?? ""]
         }
     }
     
@@ -41,14 +42,23 @@ enum Request {
         let tokenKey = "token"
         switch self {
         case .loginUser:
-            return [tokenKey: SessionData.token]
+            return [tokenKey: SingleSession.shared.idToken ?? ""]
         default:
-            return [tokenKey: SessionData.token]
+            return [tokenKey: SingleSession.shared.idToken ?? ""]
         }
     }
     
     var body: String {
+        let tokenKey = "token"
         switch self {
+        case .loginUser:
+            let jsonBody =  [tokenKey: SingleSession.shared.idToken ?? ""]
+            do {
+                var jsonData: Data = try JSONSerialization.data(withJSONObject: jsonBody, options: .prettyPrinted)
+                return String(data: jsonData, encoding: .utf8)!
+            } catch {
+                return ""
+            }
         default:
             return ""
         }

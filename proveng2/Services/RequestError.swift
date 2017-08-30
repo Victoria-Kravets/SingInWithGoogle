@@ -12,4 +12,5 @@ enum RequestError: Error {
     case dataError
     case jsonError
     case unsupportedError
+    case tokenError
 }

@@ -41,20 +41,23 @@ class DataRequestService {
     
     func send(request: Request) -> Promise<Any> {
         return Promise { fulfill, reject in
+            guard SingleSession.shared.accessToken != nil else {
+                reject(RequestError.tokenError)
+                return
+            }
             let path = request.path
             let parameters = request.parameters
             let method = request.method
             let headers = request.headers
-            //let body = request.body
+            let body = request.body
             var urlComponents =  URLComponents()
             urlComponents.scheme = self.urlScheme
             urlComponents.host = self.urlHost
             urlComponents.path = self.urlPath + path
-            if parameters!.count > 0{
+            if parameters!.count > 0 {
                 urlComponents.query = parameters?.stringFromHttpParameters()
             }
             let urlRequest = urlComponents.url
-            print(urlRequest?.absoluteString)
             let request = manager.request(urlRequest!, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { [weak self] response in
                 switch response.result {
                 case .success:

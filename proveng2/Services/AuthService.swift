@@ -24,16 +24,15 @@ class AuthService: NSObject {
         GIDService!.delegate = self
     }
     
-    @discardableResult func signInExplicitlyWithPromise() -> Promise<AuthResult> {
+    func signInExplicitlyWithPromise() -> Promise<AuthResult> {
         return Promise { fulfill, reject in
-            GIDService!.signIn()
+            GIDService?.signIn()
             guard authError == nil else {
                 reject(authError!)
                 return
             }
             fulfill(.success)
         }
-        
     }
     
     @discardableResult func signInSilentlyWithPromise() -> Promise<AuthResult> {
@@ -77,7 +76,6 @@ extension AuthService: GIDSignInDelegate {
         
         SingleSession.shared.idToken = user.authentication.idToken
         SingleSession.shared.accessToken = user.authentication.accessToken
-        SingleSession.shared.userId = user.userID
 
     }
     

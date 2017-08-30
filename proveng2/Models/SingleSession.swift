@@ -16,12 +16,10 @@ class SingleSession {
     
     var accessToken: String?
     var idToken: String?
-    var userId: String?
     
     func clearSession() {
         accessToken = nil
         idToken = nil
-        userId = nil
     }
     
 }

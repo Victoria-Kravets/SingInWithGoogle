@@ -17,44 +17,57 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var rulesLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
-
+    
+    let GIDService = GIDSignIn.sharedInstance()
     let authService = AuthService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDService?.uiDelegate = self
+        //GIDService?.signOut() // for development purposes
         signInSilently()
     }
     
-    @IBAction func signIn() {
-        signInExplicitly()
-    }
-    
-    func signInSilently() {
-        if !authService.hasToken {
-            firstly {
-                authService.signInSilentlyWithPromise()
-                }.then { _ in
-                    DataRequestService.shared.send(request: .loginUser).then {
-                        print($0)
-                    }
-                }.catch {
-                    print($0.localizedDescription)
+    override func viewDidAppear(_ animated: Bool) {
+        if SingleSession.shared.accessToken != nil {
+            DataRequestService.shared.send(request: .loginUser).then { result in
+                print(result)
             }
         }
     }
     
-    func signInExplicitly() {
-        firstly {
-            authService.signInExplicitlyWithPromise()
-            }.then { _ in
-                DataRequestService.shared.send(request: .loginUser).then { result in
-                    print(result)
-                }
-            }.catch {
-                print($0.localizedDescription)
-        }
-
+    @IBAction func signIn() {
+        authService.signInExplicitlyWithPromise()
     }
-
+    
+    func signInSilently() {
+        if authService.hasToken {
+            firstly {
+                self.authService.signInSilentlyWithPromise()
+                }.then { _ in
+                    self.attempt { DataRequestService.shared.send(request: .loginUser) }.then { result in
+                        print(result)
+                        
+                        }.catch { error in
+                            print(error.localizedDescription)
+                    }
+            }
+        }
+    }
+    
+    func attempt<T>(interdelay: DispatchTimeInterval = .seconds(2), maxRepeat: Int = 3, body: @escaping () -> Promise<T>) -> Promise<T> {
+        var attempts = 0
+        func attempt() -> Promise<T> {
+            attempts += 1
+            return body().recover { error -> Promise<T> in
+                guard attempts < maxRepeat else { throw error }
+                
+                return after(interval: interdelay).then {
+                    return attempt()
+                }
+            }
+        }
+        
+        return attempt()
+    }
 }

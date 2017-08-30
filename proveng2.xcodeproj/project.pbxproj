@@ -85,6 +85,7 @@
 		353708741F50F35D00A43C65 /* SingleSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSession.swift; sourceTree = "<group>"; };
 		353708791F5167FF00A43C65 /* DataRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestService.swift; sourceTree = "<group>"; };
 		3537087B1F51BDD700A43C65 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		359B0BD51F559674007EAB96 /* proveng2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proveng2-Bridging-Header.h"; sourceTree = "<group>"; };
 		35B612701F50E7CB000A3B94 /* AuthHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelpers.swift; sourceTree = "<group>"; };
 		35B612721F50E7CB000A3B94 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		35B612741F50E809000A3B94 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
@@ -272,6 +273,7 @@
 				E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */,
 				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
 				35B6127F1F50EEC3000A3B94 /* GoogleSignIn.bundle */,
+				359B0BD51F559674007EAB96 /* proveng2-Bridging-Header.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -338,6 +340,7 @@
 				TargetAttributes = {
 					75F35B441F4739580049C455 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					75F35B581F4739580049C455 = {
@@ -597,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -614,6 +618,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "proveng2/Utilities/proveng2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -624,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -641,6 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = proveng2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "proveng2/Utilities/proveng2-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
