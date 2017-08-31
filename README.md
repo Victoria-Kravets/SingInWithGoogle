@@ -6,5 +6,19 @@
 - Static analyzers:   `tailor`,  `swiftlint`
 
 **Instructions:**
-- Static analyzers: For using static analyzers just need to install program in your computer.
 
+- Static analyzers: to use static analyzers you need to install them on your machine using [Homebrew](http://brew.sh/):
+
+```
+brew install swiftlint
+```
+
+```
+brew install tailor
+```
+
+To update Carthage dependencies, use following command to build dependencies with your compiler (avoiding versions mismatch)
+
+```
+carthage update --no-use-binaries
+```
