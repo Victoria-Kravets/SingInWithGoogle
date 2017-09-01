@@ -29,6 +29,9 @@
 		75CA64FF1F59A27E002D70C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA64FE1F59A27E002D70C7 /* MainViewController.swift */; };
 		75CA65001F59A41F002D70C7 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA64FC1F59A155002D70C7 /* FSCalendar.framework */; };
 		75CA65011F59A41F002D70C7 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA64FC1F59A155002D70C7 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75CA65031F59AB18002D70C7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA65021F59AB17002D70C7 /* SnapKit.framework */; };
+		75CA65041F59AB1B002D70C7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA65021F59AB17002D70C7 /* SnapKit.framework */; };
+		75CA65051F59AB1B002D70C7 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA65021F59AB17002D70C7 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
 		75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C51F4C5EC700657CB4 /* User.swift */; };
 		75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C71F4C721600657CB4 /* RealmMigration.swift */; };
@@ -75,6 +78,7 @@
 				E99443791F4E1E0900383E11 /* PromiseKit.framework in Embed Frameworks */,
 				75CA65011F59A41F002D70C7 /* FSCalendar.framework in Embed Frameworks */,
 				E99443771F4E1E0900383E11 /* RealmSwift.framework in Embed Frameworks */,
+				75CA65051F59AB1B002D70C7 /* SnapKit.framework in Embed Frameworks */,
 				E994437B1F4E1E0900383E11 /* ObjectMapper.framework in Embed Frameworks */,
 				E994437D1F4E1E0900383E11 /* Alamofire.framework in Embed Frameworks */,
 				E99443751F4E1E0900383E11 /* Realm.framework in Embed Frameworks */,
@@ -110,6 +114,7 @@
 		75C438571F49F67C003B0576 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		75CA64FC1F59A155002D70C7 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
 		75CA64FE1F59A27E002D70C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75CA65021F59AB17002D70C7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		75F35B451F4739580049C455 /* proveng2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proveng2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F35B541F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F35B591F4739580049C455 /* proveng2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proveng2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +148,8 @@
 				E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */,
 				E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */,
 				E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */,
+				75CA65031F59AB18002D70C7 /* SnapKit.framework in Frameworks */,
+				75CA65041F59AB1B002D70C7 /* SnapKit.framework in Frameworks */,
 				35B612781F50E809000A3B94 /* GoogleSignInDependencies.framework in Frameworks */,
 				75CA64FD1F59A155002D70C7 /* FSCalendar.framework in Frameworks */,
 				35B612791F50E809000A3B94 /* GoogleSignIn.framework in Frameworks */,
@@ -176,6 +183,7 @@
 		7577E2561F47780000F8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75CA65021F59AB17002D70C7 /* SnapKit.framework */,
 				75CA64FC1F59A155002D70C7 /* FSCalendar.framework */,
 				35B612831F50EF29000A3B94 /* SystemConfiguration.framework */,
 				35B612811F50EF23000A3B94 /* SafariServices.framework */,

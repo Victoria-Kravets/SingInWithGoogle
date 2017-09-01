@@ -8,6 +8,8 @@
 
 import UIKit
 import FSCalendar
+import SnapKit
+
 class MainViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
 
     @IBOutlet weak var calendar: FSCalendar!
@@ -21,7 +23,13 @@ class MainViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        calendar.snp.updateConstraints { (make) in
+            make.height.equalTo(bounds.height)
+            // Do other updates
+        }
+        self.view.layoutIfNeeded()
+    }
 
     /*
     // MARK: - Navigation
