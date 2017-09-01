@@ -25,6 +25,10 @@
 		35B612841F50EF29000A3B94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612831F50EF29000A3B94 /* SystemConfiguration.framework */; };
 		75C438551F49E6D2003B0576 /* .tailor.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438541F49E6D2003B0576 /* .tailor.yml */; };
 		75C438581F49F67C003B0576 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 75C438571F49F67C003B0576 /* .swiftlint.yml */; };
+		75CA64FD1F59A155002D70C7 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA64FC1F59A155002D70C7 /* FSCalendar.framework */; };
+		75CA64FF1F59A27E002D70C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA64FE1F59A27E002D70C7 /* MainViewController.swift */; };
+		75CA65001F59A41F002D70C7 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA64FC1F59A155002D70C7 /* FSCalendar.framework */; };
+		75CA65011F59A41F002D70C7 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75CA64FC1F59A155002D70C7 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75F35B5E1F4739580049C455 /* proveng2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F35B5D1F4739580049C455 /* proveng2Tests.swift */; };
 		75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C51F4C5EC700657CB4 /* User.swift */; };
 		75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAF4C71F4C721600657CB4 /* RealmMigration.swift */; };
@@ -69,6 +73,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E99443791F4E1E0900383E11 /* PromiseKit.framework in Embed Frameworks */,
+				75CA65011F59A41F002D70C7 /* FSCalendar.framework in Embed Frameworks */,
 				E99443771F4E1E0900383E11 /* RealmSwift.framework in Embed Frameworks */,
 				E994437B1F4E1E0900383E11 /* ObjectMapper.framework in Embed Frameworks */,
 				E994437D1F4E1E0900383E11 /* Alamofire.framework in Embed Frameworks */,
@@ -103,6 +108,8 @@
 		7577E2641F478D9900F8257B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		75C438541F49E6D2003B0576 /* .tailor.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .tailor.yml; sourceTree = "<group>"; };
 		75C438571F49F67C003B0576 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		75CA64FC1F59A155002D70C7 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		75CA64FE1F59A27E002D70C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		75F35B451F4739580049C455 /* proveng2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proveng2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F35B541F4739580049C455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F35B591F4739580049C455 /* proveng2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proveng2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,12 +137,14 @@
 			files = (
 				35B612841F50EF29000A3B94 /* SystemConfiguration.framework in Frameworks */,
 				35B612821F50EF24000A3B94 /* SafariServices.framework in Frameworks */,
+				75CA65001F59A41F002D70C7 /* FSCalendar.framework in Frameworks */,
 				E99443781F4E1E0900383E11 /* PromiseKit.framework in Frameworks */,
 				E99443761F4E1E0900383E11 /* RealmSwift.framework in Frameworks */,
 				E994437A1F4E1E0900383E11 /* ObjectMapper.framework in Frameworks */,
 				E994437C1F4E1E0900383E11 /* Alamofire.framework in Frameworks */,
 				E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */,
 				35B612781F50E809000A3B94 /* GoogleSignInDependencies.framework in Frameworks */,
+				75CA64FD1F59A155002D70C7 /* FSCalendar.framework in Frameworks */,
 				35B612791F50E809000A3B94 /* GoogleSignIn.framework in Frameworks */,
 				35B6127A1F50E809000A3B94 /* GoogleAppUtilities.framework in Frameworks */,
 				35B6127B1F50E809000A3B94 /* GoogleSymbolUtilities.framework in Frameworks */,
@@ -167,6 +176,7 @@
 		7577E2561F47780000F8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75CA64FC1F59A155002D70C7 /* FSCalendar.framework */,
 				35B612831F50EF29000A3B94 /* SystemConfiguration.framework */,
 				35B612811F50EF23000A3B94 /* SafariServices.framework */,
 				35B612761F50E809000A3B94 /* GoogleAppUtilities.framework */,
@@ -251,6 +261,7 @@
 			children = (
 				E994436E1F4E1C3600383E11 /* ViewController.swift */,
 				E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */,
+				75CA64FE1F59A27E002D70C7 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -444,6 +455,7 @@
 				3514EACF1F531D96003B294A /* Extensions.swift in Sources */,
 				75FAF4CA1F4C8E5F00657CB4 /* ListTransform.swift in Sources */,
 				E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */,
+				75CA64FF1F59A27E002D70C7 /* MainViewController.swift in Sources */,
 				3514EAD11F53204B003B294A /* RequestError.swift in Sources */,
 				75FAF4C61F4C5EC700657CB4 /* User.swift in Sources */,
 			);
