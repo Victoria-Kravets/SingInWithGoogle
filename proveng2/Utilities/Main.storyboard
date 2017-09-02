@@ -26,17 +26,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="sign_in_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60T-Qv-fVm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="By signing in, you agree to Proveng Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-Rc-PH4">
-                                <rect key="frame" x="63" y="701" width="288" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-19-SKE" customClass="BaseButton" customModule="proveng2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-19-SKE" customClass="BaseButton" customModule="proveng2" customModuleProvider="target">
                                 <rect key="frame" x="65.5" y="618" width="287" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.56000000240000003" green="0.56000000240000003" blue="0.56000000240000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Sign In">
@@ -46,9 +37,8 @@
                                     <action selector="signIn" destination="Fxg-eP-84K" eventType="touchUpInside" id="5r1-fA-CdI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="PROVENG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHI-sl-reT">
-                                <rect key="frame" x="63" y="116.5" width="288" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="PROVENG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHI-sl-reT">
+                                <rect key="frame" x="135.66666666666669" y="130.66666666666666" width="143.00000000000006" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,21 +49,41 @@
                                     <constraint firstAttribute="width" secondItem="kYr-VB-dlx" secondAttribute="height" id="ENS-UI-iH5"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gos-XN-xDu">
+                                <rect key="frame" x="197" y="215" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="By signing in, you agree to Proveng Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-Rc-PH4">
+                                <rect key="frame" x="19.666666666666657" y="696.5" width="375" height="13"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yGM-Rc-PH4" firstAttribute="top" relation="lessThanOrEqual" secondItem="hNi-19-SKE" secondAttribute="bottom" constant="20" id="14A-xr-ebv"/>
                             <constraint firstItem="kYr-VB-dlx" firstAttribute="height" secondItem="q6D-P6-BCP" secondAttribute="height" multiplier="0.3" id="3h2-9T-eqG"/>
                             <constraint firstItem="60T-Qv-fVm" firstAttribute="trailing" secondItem="8bR-SU-Eyb" secondAttribute="trailing" id="5wL-e5-QlH"/>
+                            <constraint firstItem="DHI-sl-reT" firstAttribute="centerX" secondItem="q6D-P6-BCP" secondAttribute="centerX" id="BLI-Gz-E6e"/>
                             <constraint firstItem="kYr-VB-dlx" firstAttribute="centerY" secondItem="8bR-SU-Eyb" secondAttribute="centerY" id="DgS-xv-4p5"/>
                             <constraint firstItem="60T-Qv-fVm" firstAttribute="width" secondItem="q6D-P6-BCP" secondAttribute="width" id="ElQ-LY-Uju"/>
                             <constraint firstItem="60T-Qv-fVm" firstAttribute="leading" secondItem="8bR-SU-Eyb" secondAttribute="leading" id="FPd-DC-67C"/>
+                            <constraint firstItem="kYr-VB-dlx" firstAttribute="top" secondItem="gos-XN-xDu" secondAttribute="bottom" constant="32.670000000000002" id="akx-6s-tzw"/>
+                            <constraint firstItem="hpM-Tr-NuI" firstAttribute="top" relation="lessThanOrEqual" secondItem="yGM-Rc-PH4" secondAttribute="bottom" constant="26.5" id="dlQ-Cz-Sma"/>
                             <constraint firstItem="60T-Qv-fVm" firstAttribute="height" secondItem="q6D-P6-BCP" secondAttribute="height" id="htn-LD-ecf"/>
+                            <constraint firstItem="8bR-SU-Eyb" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yGM-Rc-PH4" secondAttribute="trailing" constant="19.5" id="iW9-TX-bTa"/>
+                            <constraint firstItem="gos-XN-xDu" firstAttribute="top" secondItem="DHI-sl-reT" secondAttribute="bottom" constant="48.5" id="kQa-sF-bOT"/>
+                            <constraint firstItem="yGM-Rc-PH4" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bR-SU-Eyb" secondAttribute="leading" constant="19.5" id="laM-DV-7iN"/>
                             <constraint firstItem="60T-Qv-fVm" firstAttribute="top" secondItem="q6D-P6-BCP" secondAttribute="top" id="mAF-CM-Jh6"/>
                             <constraint firstItem="kYr-VB-dlx" firstAttribute="centerX" secondItem="8bR-SU-Eyb" secondAttribute="centerX" id="oIN-l7-qxu"/>
+                            <constraint firstItem="yGM-Rc-PH4" firstAttribute="centerX" secondItem="q6D-P6-BCP" secondAttribute="centerX" id="qDe-H1-XSK"/>
+                            <constraint firstItem="gos-XN-xDu" firstAttribute="centerX" secondItem="q6D-P6-BCP" secondAttribute="centerX" id="zZL-ov-C8Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8bR-SU-Eyb"/>
                     </view>
                     <connections>
+                        <outlet property="authSpinner" destination="gos-XN-xDu" id="GDA-a8-3WA"/>
                         <outlet property="loginButton" destination="hNi-19-SKE" id="Mps-x0-QGF"/>
                         <outlet property="rulesLabel" destination="yGM-Rc-PH4" id="s5P-Ys-VdZ"/>
                         <outlet property="titleLabel" destination="DHI-sl-reT" id="Ow6-Kf-zab"/>

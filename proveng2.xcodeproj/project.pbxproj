@@ -14,6 +14,7 @@
 		353708781F50F4D400A43C65 /* AuthHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B612701F50E7CB000A3B94 /* AuthHelpers.swift */; };
 		3537087A1F5167FF00A43C65 /* DataRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353708791F5167FF00A43C65 /* DataRequestService.swift */; };
 		3537087C1F51BDD700A43C65 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537087B1F51BDD700A43C65 /* Request.swift */; };
+		359F13341F5964B900E43171 /* AuthResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F13331F5964B900E43171 /* AuthResult.swift */; };
 		35B612781F50E809000A3B94 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612741F50E809000A3B94 /* GoogleSignInDependencies.framework */; };
 		35B612791F50E809000A3B94 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612751F50E809000A3B94 /* GoogleSignIn.framework */; };
 		35B6127A1F50E809000A3B94 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B612761F50E809000A3B94 /* GoogleAppUtilities.framework */; };
@@ -32,7 +33,6 @@
 		E90E47431F4CCB2B00DD5E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A532A21F4CA29100FC1746 /* Assets.xcassets */; };
 		E99443701F4E1C3700383E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E994436A1F4E1C3600383E11 /* LaunchScreen.storyboard */; };
 		E99443711F4E1C3700383E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E994436C1F4E1C3600383E11 /* Main.storyboard */; };
-		E99443721F4E1C3700383E11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994436E1F4E1C3600383E11 /* ViewController.swift */; };
 		E99443731F4E1C3700383E11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994436F1F4E1C3600383E11 /* AppDelegate.swift */; };
 		E99443741F4E1E0900383E11 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; };
 		E99443751F4E1E0900383E11 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7577E2641F478D9900F8257B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,7 +47,6 @@
 		E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */; };
 		E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6061F4CAC8700415314 /* BaseButton.swift */; };
 		E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */; };
-		E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E60B1F4CAD9E00415314 /* SessionData.swift */; };
 		E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +85,7 @@
 		353708791F5167FF00A43C65 /* DataRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestService.swift; sourceTree = "<group>"; };
 		3537087B1F51BDD700A43C65 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		359B0BD51F559674007EAB96 /* proveng2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proveng2-Bridging-Header.h"; sourceTree = "<group>"; };
+		359F13331F5964B900E43171 /* AuthResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResult.swift; sourceTree = "<group>"; };
 		35B612701F50E7CB000A3B94 /* AuthHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelpers.swift; sourceTree = "<group>"; };
 		35B612721F50E7CB000A3B94 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		35B612741F50E809000A3B94 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
@@ -113,13 +113,11 @@
 		75FAF4C91F4C8E5F00657CB4 /* ListTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTransform.swift; sourceTree = "<group>"; };
 		E994436B1F4E1C3600383E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E994436D1F4E1C3600383E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		E994436E1F4E1C3600383E11 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E994436F1F4E1C3600383E11 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9A532A21F4CA29100FC1746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B4E6061F4CAC8700415314 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsForElements.swift; sourceTree = "<group>"; };
-		E9B4E60B1F4CAD9E00415314 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		E9B4E60E1F4CAE1800415314 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +192,7 @@
 			children = (
 				75FAF4C51F4C5EC700657CB4 /* User.swift */,
 				353708741F50F35D00A43C65 /* SingleSession.swift */,
+				359F13331F5964B900E43171 /* AuthResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,7 +248,6 @@
 		E9A5329F1F4C959F00FC1746 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E994436E1F4E1C3600383E11 /* ViewController.swift */,
 				E9A532A01F4C95AA00FC1746 /* LoginViewController.swift */,
 			);
 			path = Controllers;
@@ -271,7 +269,6 @@
 				E994436F1F4E1C3600383E11 /* AppDelegate.swift */,
 				E9A532A21F4CA29100FC1746 /* Assets.xcassets */,
 				E9B4E6091F4CAD1400415314 /* ColorsForElements.swift */,
-				E9B4E60B1F4CAD9E00415314 /* SessionData.swift */,
 				35B6127F1F50EEC3000A3B94 /* GoogleSignIn.bundle */,
 				359B0BD51F559674007EAB96 /* proveng2-Bridging-Header.h */,
 			);
@@ -341,7 +338,7 @@
 					75F35B441F4739580049C455 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					75F35B581F4739580049C455 = {
 						CreatedOnToolsVersion = 9.0;
@@ -429,16 +426,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359F13341F5964B900E43171 /* AuthResult.swift in Sources */,
 				E9A532A11F4C95AA00FC1746 /* LoginViewController.swift in Sources */,
 				E9B4E60F1F4CAE1800415314 /* UIColorExtensions.swift in Sources */,
 				E9B4E60A1F4CAD1400415314 /* ColorsForElements.swift in Sources */,
 				353708761F50F4CF00A43C65 /* AuthService.swift in Sources */,
-				E99443721F4E1C3700383E11 /* ViewController.swift in Sources */,
 				353708781F50F4D400A43C65 /* AuthHelpers.swift in Sources */,
 				3537087C1F51BDD700A43C65 /* Request.swift in Sources */,
 				E9B4E6071F4CAC8700415314 /* BaseButton.swift in Sources */,
 				3537087A1F5167FF00A43C65 /* DataRequestService.swift in Sources */,
-				E9B4E60C1F4CAD9E00415314 /* SessionData.swift in Sources */,
 				75FAF4C81F4C721600657CB4 /* RealmMigration.swift in Sources */,
 				353708751F50F35D00A43C65 /* SingleSession.swift in Sources */,
 				3514EACF1F531D96003B294A /* Extensions.swift in Sources */,
@@ -602,8 +598,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67459ZGRXW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -632,8 +628,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67459ZGRXW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

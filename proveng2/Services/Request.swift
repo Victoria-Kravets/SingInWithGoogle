@@ -20,12 +20,17 @@ enum Request {
     
     case loginUser
     case logoutUser
+    case getUserProfile(userId: Int)
     
     var parameters: [String: Any]? {
         let tokenKey = "gToken"
+        let IdKey = "id"
         switch self {
         case .loginUser, .logoutUser:
             return [tokenKey: SingleSession.shared.accessToken ?? ""]
+        case .getUserProfile(let userId):
+            return [IdKey: userId]
+            
         }
     }
     
@@ -35,16 +40,16 @@ enum Request {
             return "auth-by-google"
         case .logoutUser:
             return "logout"
+        case .getUserProfile:
+            return "user"
         }
     }
         
     var headers: [String: String] {
         let tokenKey = "gToken"
         switch self {
-        case .loginUser:
-            return [tokenKey: SingleSession.shared.accessToken ?? ""]
         default:
-            return [tokenKey: SingleSession.shared.accessToken ?? ""]
+            return [:]
         }
     }
     
@@ -54,7 +59,7 @@ enum Request {
         case .loginUser:
             let jsonBody =  [tokenKey: SingleSession.shared.accessToken ?? ""]
             do {
-                var jsonData: Data = try JSONSerialization.data(withJSONObject: jsonBody, options: .prettyPrinted)
+                let jsonData: Data = try JSONSerialization.data(withJSONObject: jsonBody, options: .prettyPrinted)
                 return String(data: jsonData, encoding: .utf8)!
             } catch {
                 return ""
@@ -68,6 +73,8 @@ enum Request {
         switch self {
         case .loginUser, .logoutUser:
             return .post
+        case .getUserProfile:
+            return .get
         }
     }
     

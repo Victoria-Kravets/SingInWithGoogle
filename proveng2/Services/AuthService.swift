@@ -13,7 +13,7 @@ import PromiseKit
 class AuthService: NSObject {
 
     fileprivate let GIDService = GIDSignIn.sharedInstance()
-    fileprivate var authError: AuthError?
+    fileprivate var authError: ApiError?
     
     var hasToken: Bool {
         return GIDSignIn.sharedInstance().hasAuthInKeychain()
@@ -24,36 +24,52 @@ class AuthService: NSObject {
         GIDService!.delegate = self
     }
     
-    func signInExplicitlyWithPromise() -> Promise<AuthResult> {
+    func signInExplicitlyWithPromise() -> Promise<String> {
         return Promise { fulfill, reject in
             GIDService?.signIn()
             guard authError == nil else {
                 reject(authError!)
                 return
             }
-            fulfill(.success)
+            fulfill("Success")
         }
     }
     
-    @discardableResult func signInSilentlyWithPromise() -> Promise<AuthResult> {
+    @discardableResult func signInSilentlyWithPromise() -> Promise<String> {
         return Promise { fulfill, reject in
             GIDService?.signInSilently()
             guard authError == nil else {
                 reject(authError!)
                 return
             }
-            fulfill(.success)
+            fulfill("Success")
         }
     }
     
-    @discardableResult func googleSignOut() -> Promise<AuthResult> {
+    @discardableResult func googleSignOut() -> Promise<String> {
         return Promise { fulfill, reject in
             guard authError == nil else {
                 reject(authError!)
                 return
             }
-        fulfill(.success)
+        fulfill("Success")
         }
+    }
+    
+    func attempt<T>(interdelay: DispatchTimeInterval = .seconds(1), maxRepeat: Int = 5, body: @escaping () -> Promise<T>) -> Promise<T> {
+        var attempts = 0
+        func attempt() -> Promise<T> {
+            attempts += 1
+            return body().recover { error -> Promise<T> in
+                guard attempts < maxRepeat else { throw error }
+                
+                return after(interval: interdelay).then {
+                    return attempt()
+                }
+            }
+        }
+        
+        return attempt()
     }
     
 }
@@ -64,34 +80,18 @@ extension AuthService: GIDSignInDelegate {
     // it's gonna be stored as a AuthService property
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        guard user != nil else {
-            authError = .noToken
-            return
-        }
-        
         guard error == nil else {
-            authError = .unknownError
+            authError = ApiError(description: error.localizedDescription)
             return
         }
         
-        SingleSession.shared.idToken = user.authentication.idToken
         SingleSession.shared.accessToken = user.authentication.accessToken
 
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        guard signIn != nil else {
-            authError = .noHandlersInstalled
-            return
-        }
-        
-        guard user != nil else {
-            authError = .noToken
-            return
-        }
-        
         guard error == nil else {
-            authError = .unknownError
+            authError = ApiError(description: error.localizedDescription)
             return
         }
         

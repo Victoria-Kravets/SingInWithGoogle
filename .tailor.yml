@@ -4,5 +4,6 @@ exclude:
 - Frameworks
 - proveng2Tests
 except:
+- line-length
 - function-whitespace
 - trailing-whitespace

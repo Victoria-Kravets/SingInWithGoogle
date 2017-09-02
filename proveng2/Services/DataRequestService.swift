@@ -30,7 +30,7 @@ class DataRequestService {
     let urlPath: String
     let manager: Alamofire.SessionManager
     
-    init(urlScheme: String, urlHost: String, urlPath: String){
+    init(urlScheme: String, urlHost: String, urlPath: String) {
         self.urlHost = urlHost
         self.urlScheme = urlScheme
         let configuration = URLSessionConfiguration.default
@@ -39,7 +39,7 @@ class DataRequestService {
         self.urlPath = urlPath
     }
     
-    func send(request: Request) -> Promise<Any> {
+    func send(request: Request) -> Promise<String> {
         return Promise { fulfill, reject in
             guard SingleSession.shared.accessToken != nil else {
                 reject(RequestError.tokenError)
@@ -49,9 +49,6 @@ class DataRequestService {
             let parameters = request.parameters
             let method = request.method
             let headers = request.headers
-            let body = request.body
-            print("AccessId:")
-            print(body)
             var urlComponents =  URLComponents()
             urlComponents.scheme = self.urlScheme
             urlComponents.host = self.urlHost
@@ -60,7 +57,7 @@ class DataRequestService {
                 urlComponents.query = parameters?.stringFromHttpParameters()
             }
             let urlRequest = urlComponents.url
-            let request = manager.request(urlRequest!, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { [weak self] response in
+            let request = manager.request(urlRequest!, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 switch response.result {
                 case .success:
                     guard response.data != nil else {
@@ -71,8 +68,18 @@ class DataRequestService {
                         reject(RequestError.dataError)
                         return
                     }
-                    fulfill(response.result.value!)
-                case .failure(_):
+                    guard let jsonDictionary = response.result.value as? [String: Any] else {
+                        reject(RequestError.jsonError)
+                        return
+                    }
+                    do {
+                        let jsonData = try JSONSerialization.data(withJSONObject: jsonDictionary, options: .prettyPrinted)
+                        let jsonString = String(data: jsonData, encoding: .utf8)!
+                        fulfill(jsonString)
+                    } catch {
+                        reject(RequestError.jsonError)
+                    }
+                case .failure:
                     reject(RequestError.unsupportedError)
                 }
             }

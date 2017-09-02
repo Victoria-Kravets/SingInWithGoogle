@@ -16,7 +16,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     @IBOutlet weak var rulesLabelTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var rulesLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var authSpinner: UIActivityIndicatorView!
     
     let GIDService = GIDSignIn.sharedInstance()
     let authService = AuthService()
@@ -30,44 +30,70 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         if SingleSession.shared.accessToken != nil {
-            DataRequestService.shared.send(request: .loginUser).then { result in
-                print(result)
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            self.authSpinner.startAnimating()
+            self.loginButton.isEnabled = false
+            DataRequestService.shared.send(request: .loginUser).then { data -> Void in
+                self.mapAuthResult(from: data)
+                }.always {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    self.authSpinner.stopAnimating()
+                    self.loginButton.isEnabled = true
+                }.catch { error in
+                    print(error.localizedDescription)
             }
         }
     }
     
     @IBAction func signIn() {
-        authService.signInExplicitlyWithPromise()
+        if Connection.isAvailable {
+            authService.signInExplicitlyWithPromise().catch { error in
+                let apiError = error.apiError
+                self.showAlert(title: "Error", description: apiError.description)
+            }
+        } else {
+            self.showAlert(title: "Error", description: "Internet connection is not available")
+        }
     }
     
-    func signInSilently() {
+    private func signInSilently() {
         if authService.hasToken {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            self.authSpinner.startAnimating()
+            self.loginButton.isEnabled = false
             firstly {
                 self.authService.signInSilentlyWithPromise()
                 }.then { _ in
-                    self.attempt { DataRequestService.shared.send(request: .loginUser) }.then { result in
-                        print(result)
-                        
-                        }.catch { error in
-                            print(error.localizedDescription)
+                    self.authService.attempt { DataRequestService.shared.send(request: .loginUser) }.then { data in
+                        self.mapAuthResult(from: data)
                     }
+                }.always {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    self.authSpinner.stopAnimating()
+                    self.loginButton.isEnabled = true
+                }.catch { error in
+                    print(error.localizedDescription)
             }
         }
     }
     
-    func attempt<T>(interdelay: DispatchTimeInterval = .seconds(2), maxRepeat: Int = 3, body: @escaping () -> Promise<T>) -> Promise<T> {
-        var attempts = 0
-        func attempt() -> Promise<T> {
-            attempts += 1
-            return body().recover { error -> Promise<T> in
-                guard attempts < maxRepeat else { throw error }
-                
-                return after(interval: interdelay).then {
-                    return attempt()
-                }
+    private func mapAuthResult(from data: String) {
+        if let mappedResult = AuthResult(JSONString: data) {
+            if mappedResult.description != nil {
+                self.showAlert(title: "Error", description: mappedResult.description!)
+                GIDService?.signOut()
+            } else if mappedResult.result != nil {
+                SingleSession.shared.backendToken = mappedResult.token
+                SingleSession.shared.userId = mappedResult.userId
+                // TODO: perform segue to the next screen
             }
         }
-        
-        return attempt()
+    }
+    
+    private func showAlert(title: String, description: String) {
+        let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }

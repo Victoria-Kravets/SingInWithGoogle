@@ -15,11 +15,15 @@ class SingleSession {
     static let shared = SingleSession()
     
     var accessToken: String?
-    var idToken: String?
+    var backendToken: String?
+    var userId: Int?
+    var teacher: Bool = false
     
     func clearSession() {
         accessToken = nil
-        idToken = nil
+        backendToken = nil
+        userId = nil
+        teacher = false
     }
     
 }

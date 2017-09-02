@@ -20,37 +20,37 @@ public enum ColorForElements {
     public var color: UIColor {
         switch self {
         case .main:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#0dc896")
             } else {
                 return UIColor(hexString: "#00aae5")
             }
         case .background:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#eef5f4")
             } else {
                 return UIColor(hexString: "#f2f5f8")
             }
         case .tabbar:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#8ca09c")
             } else {
                 return UIColor(hexString: "#969ea6")
             }
         case .text:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#00372e")
             } else {
                 return UIColor(hexString: "#1f303d")
             }
         case .additional:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#ff4e59")
             } else {
                 return UIColor(hexString: "#ffa400")
             }
         case .lesson:
-            if SessionData.teacher {
+            if SingleSession.shared.teacher {
                 return UIColor(hexString: "#e2939a")
             } else {
                 return UIColor(hexString: "#e2939a")
